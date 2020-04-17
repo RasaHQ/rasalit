@@ -51,6 +51,12 @@ The app contains a collection of viewers that each specialize in a seperate task
 
 ### Overview 
 
+This command is run via; 
+
+```
+> python -m rasalit overview
+```
+
 You can run cross validation of pipelines in Rasa via the command line.
 
 ```
