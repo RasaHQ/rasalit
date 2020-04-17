@@ -9,7 +9,8 @@ Feedback is welcome.
 
 This project was initiated at [Rasa](https://rasa.com) as a fun side project
 that supports the research and developer advocacy teams at Rasa.
-It is maintained by Vincent D. Warmerdam, Research Advocate at Rasa.
+
+It is maintained by [Vincent D. Warmerdam](https://twitter.com/fishnets88), Research Advocate at Rasa.
 
 ## Installation 
 
