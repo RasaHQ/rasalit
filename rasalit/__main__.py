@@ -21,7 +21,16 @@ def overview():
     subprocess.run(["streamlit", "run", app])
 
 
+@click.command()
+def diet_explorer():
+    """Allows you to explore the DIET settings."""
+    app = app_path("html/diet")
+    click.echo(click.style(f'Starting up {app}', fg='green'))
+    subprocess.run(["python", "-m", "http.server", "54321", "--directory", app])
+
+
 main.add_command(overview)
+main.add_command(diet_explorer)
 
 
 if __name__ == "__main__":
