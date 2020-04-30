@@ -1,6 +1,6 @@
 import pathlib
 import subprocess
-
+import pandas as pd
 import click
 
 
@@ -34,8 +34,23 @@ def diet_explorer(port):
     subprocess.run(["python", "-m", "http.server", str(port), "--directory", app])
 
 
+@click.command()
+@click.argument('filename', type=click.Path(exists=True))
+@click.argument('columns', nargs=-1)
+@click.option('--port', default=8501, help='Port number, default=8501.')
+def pcoords(filename, columns, port):
+    """Show a parallel coordinates view of csv file."""
+    df = pd.read_csv(filename)[list(columns)]
+    print(df.head())
+    app = app_path("html/parallelcoords")
+    df.to_csv(f"{app}/data.csv", index=False)
+    click.echo(click.style(f'Starting up {app}', fg='green'))
+    subprocess.run(["python", "-m", "http.server", str(port), "--directory", app])
+
+
 main.add_command(overview)
 main.add_command(diet_explorer)
+main.add_command(pcoords)
 
 
 if __name__ == "__main__":
