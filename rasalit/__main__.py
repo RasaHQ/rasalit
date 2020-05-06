@@ -39,7 +39,7 @@ def diet_explorer(port):
 @click.argument('columns', nargs=-1)
 @click.option('--port', default=8501, help='Port number, default=8501.')
 def pcoords(filename, columns, port):
-    """Show a parallel coordinates view of csv file."""
+    """Parallel coordinates view of csv file *EXPERIMENTAL*."""
     df = pd.read_csv(filename)[list(columns)]
     print(df.head())
     app = app_path("html/parallelcoords")
