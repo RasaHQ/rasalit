@@ -39,8 +39,18 @@ def diet_explorer(port):
 @click.argument('columns', nargs=-1)
 @click.option('--port', default=8501, help='Port number, default=8501.')
 def pcoords(filename, columns, port):
-    """Show a parallel coordinates view of csv file."""
-    df = pd.read_csv(filename)[list(columns)]
+    """Parallel coordinates view of csv file *EXPERIMENTAL*."""
+    df = pd.read_csv(filename)
+    print("Warning: ignoring non-numeric columns for now.")
+    if len(columns) == 0:
+        print("Warning: no columns passed so I'll not do a subset.")
+        columns = df.columns
+    df = df[list(columns)].select_dtypes(include=['int64','float64'])
+    for col in df.columns:
+        if df[col].nunique() == 1:
+            print(f"Warning: dropping {col} because it only has one value.")
+            df = df.drop(col)
+    print("Info: first few rows of dataframe")
     print(df.head())
     app = app_path("html/parallelcoords")
     df.to_csv(f"{app}/data.csv", index=False)
