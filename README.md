@@ -1,6 +1,7 @@
 # RasaLit
 
-A collection of [streamlit](https://github.com/streamlit/streamlit) with helper views for Rasa NLU.
+A collection of helpful viewers that help with understanding for Rasa NLU. Some of these views are made using [streamlit](https://github.com/streamlit/streamlit), hence the wink in the name. 
+
 Feedback is welcome.
 
 <img src="docs/logo.png" width=300 height=160 align="right">
