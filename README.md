@@ -3,7 +3,7 @@
 A collection of [streamlit](https://github.com/streamlit/streamlit) with helper views for Rasa NLU.
 Feedback is welcome.
 
-<img src="docs/square-logo.svg" width=200 height=200 align="right">
+<img src="docs/logo.png" width=300 height=160 align="right">
 
 ## Produced
 
