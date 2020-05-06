@@ -1,15 +1,17 @@
+<img src="docs/logo.png" width=300 height=160 align="right">
+
 # RasaLit
 
-A collection of [streamlit](https://github.com/streamlit/streamlit) with helper views for Rasa NLU.
-Feedback is welcome.
+A collection of helpful viewers that help with understanding for Rasa NLU. Some of these views are made using [streamlit](https://github.com/streamlit/streamlit), hence the wink in the name. 
 
-<img src="docs/logo.png" width=300 height=160 align="right">
+Feedback is welcome.
 
 ## Produced
 
 This project was initiated at [Rasa](https://rasa.com) as a fun side project
 that supports the research and developer advocacy teams at Rasa.
-It is maintained by Vincent D. Warmerdam, Research Advocate at Rasa.
+
+It is maintained by [Vincent D. Warmerdam](https://twitter.com/fishnets88), Research Advocate at Rasa.
 
 ## Installation 
 
@@ -67,6 +69,12 @@ Example Usage:
 
 ```
 > rasalit overview --port 8501
+```
+
+This command is run via; 
+
+```
+> python -m rasalit overview
 ```
 
 You can run cross validation of pipelines in Rasa via the command line.
