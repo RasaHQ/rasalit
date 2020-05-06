@@ -1,5 +1,6 @@
 import pathlib
 import subprocess
+import numpy as np
 import pandas as pd
 import click
 
@@ -34,6 +35,30 @@ def diet_explorer(port):
     subprocess.run(["python", "-m", "http.server", str(port), "--directory", app])
 
 
+def select_correct_subset(df, columns=tuple()):
+    if len(columns) == 0:
+        print("Warning: no columns passed so I'll not do a subset.")
+        columns = df.columns
+    df = df[columns]
+    
+    # drop non-unique columns
+    cols_to_drop = [c for c in columns if df[c].nunique() == 1]
+    df = df.drop(columns=cols_to_drop)
+    for col in cols_to_drop:
+        print(f"Warning: {col} has only one value -> dropping.")
+    
+    # drop nan columns 
+    for col in df.columns:
+        if df[col].isna().all():
+            print(f"Warning: {col} only has NaN values -> dropping.")
+            df = df.drop(columns=[col])
+    
+    # replace nan with zeros 
+    for col in df.columns:
+        df[col] = np.where(df[col].isna(), 0, df[col])
+    return df.select_dtypes(include=['int64','float64'])
+
+
 @click.command()
 @click.argument('filename', type=click.Path(exists=True))
 @click.argument('columns', nargs=-1)
@@ -41,15 +66,7 @@ def diet_explorer(port):
 def pcoords(filename, columns, port):
     """Parallel coordinates view of csv file *EXPERIMENTAL*."""
     df = pd.read_csv(filename)
-    print("Warning: ignoring non-numeric columns for now.")
-    if len(columns) == 0:
-        print("Warning: no columns passed so I'll not do a subset.")
-        columns = df.columns
-    df = df[list(columns)].select_dtypes(include=['int64','float64'])
-    for col in df.columns:
-        if df[col].nunique() == 1:
-            print(f"Warning: dropping {col} because it only has one value.")
-            df = df.drop(col)
+    df = select_correct_subset(df, columns)
     print("Info: first few rows of dataframe")
     print(df.head())
     app = app_path("html/parallelcoords")
