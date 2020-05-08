@@ -3,12 +3,14 @@ import subprocess
 import numpy as np
 import pandas as pd
 import click
+from pkg_resources import resource_filename
 
 
 def app_path(py_file):
-    found_path = str(pathlib.Path(__file__).parent.absolute() / py_file)
+    found_path = resource_filename("rasalit", py_file)
     assert pathlib.Path(found_path).exists()
     return found_path
+
 
 @click.group()
 def main():

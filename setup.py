@@ -15,6 +15,7 @@ setup(
             'rasalit = rasalit.__main__:main',
         ],
     },
+    package_data={"rasalit": ["html/*/*.html"]},
     extras_require={
         "dev": dev_packages
     }
