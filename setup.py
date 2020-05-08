@@ -7,7 +7,7 @@ dev_packages = ["flake8>=3.6.0", "pytest==4.0.2",]
 
 setup(
     name="rasalit",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(exclude=['notebooks']),
     install_requires=base_packages,
     entry_points={
