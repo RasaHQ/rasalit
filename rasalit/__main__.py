@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import click
 from pkg_resources import resource_filename
-
+from rasalit import __version__
 
 def app_path(py_file):
     found_path = resource_filename("rasalit", py_file)
@@ -14,7 +14,7 @@ def app_path(py_file):
 
 @click.group()
 def main():
-    """Helper Views for Rasa NLU"""
+    """Rasalit- Helper Views for Rasa NLU"""
     pass
 
 
@@ -77,9 +77,16 @@ def pcoords(filename, columns, port):
     subprocess.run(["python", "-m", "http.server", str(port), "--directory", app])
 
 
+@click.command()
+def version():
+    """Prints the current version"""
+    print(f"{__version__}")
+
+
 main.add_command(overview)
 main.add_command(diet_explorer)
 main.add_command(pcoords)
+main.add_command(version)
 
 
 if __name__ == "__main__":
