@@ -66,7 +66,7 @@ The app contains a collection of viewers that each specialize in a seperate task
 Example Usage: 
 
 ```
-> rasalit overview --port 8501
+> rasalit diet-explorer --port 8501
 ```
 
 This will start a server locally on port 8501 that will display an interactive visualisation of the DIET architecture. 
