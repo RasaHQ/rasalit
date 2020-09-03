@@ -1,6 +1,5 @@
 import subprocess
 import typer
-from pkg_resources import resource_filename
 from rasalit import __version__
 from rasalit.common import run_streamlit_app, app_path
 
@@ -18,7 +17,7 @@ def overview(port: int = typer.Option(8501, help=("Port number"))):
 def diet_explorer(port: int = typer.Option(8501, help=("Port number"))):
     """Allows you to explore the DIET settings."""
     app = app_path("html/diet")
-    typer.echo(typer.style(f'Starting up {app}', fg='green'))
+    typer.echo(typer.style(f"Starting up {app}", fg="green"))
     subprocess.run(["python", "-m", "http.server", str(port), "--directory", app])
 
 

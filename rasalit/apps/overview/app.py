@@ -15,7 +15,11 @@ def read_config(results_folder, config_name):
     paths = list(pathlib.Path(results_folder).glob("*/*.yml"))
     config_path = list(str(p) for p in paths if config_name in str(p))
 
-    if len(config_path) == 0 or len(config_path) > 1 or not os.path.exists(config_path[0]):
+    if (
+        len(config_path) == 0
+        or len(config_path) > 1
+        or not os.path.exists(config_path[0])
+    ):
         return {
             "Error": f"Not able to find config file in results folder '{results_folder}'."
         }
@@ -169,12 +173,8 @@ if show_raw_data:
 
 config_to_show = st.sidebar.selectbox("Show content of config:", possible_configs)
 
-show_results_for(
-    intent_df, show_raw_data, selected_config, "Intent Summary Overview"
-)
-show_results_for(
-    entity_df, show_raw_data, selected_config, "Entity Summary Overview"
-)
+show_results_for(intent_df, show_raw_data, selected_config, "Intent Summary Overview")
+show_results_for(entity_df, show_raw_data, selected_config, "Entity Summary Overview")
 show_results_for(
     response_df, show_raw_data, selected_config, "Response Summary Overview"
 )
