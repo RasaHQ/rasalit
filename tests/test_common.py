@@ -1,5 +1,5 @@
 import pytest
-from rasalit.__main__ import app_path
+from rasalit.common import app_path
 
 
 @pytest.mark.parametrize("f", ["app.py", "html/diet"])
