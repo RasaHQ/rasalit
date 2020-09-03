@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from rasalit import __version__
 
-base_packages = ["streamlit>=0.57.3"]
+base_packages = ["streamlit>=0.57.3", "pyyaml>=5.3.1", "pandas>=1.0.3", "altair>=4.1.0"]
 
 dev_packages = ["flake8>=3.6.0", "pytest==4.0.2",]
 
