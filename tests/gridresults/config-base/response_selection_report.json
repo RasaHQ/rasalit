@@ -1,0 +1,27 @@
+{
+  "I only understand English, I'm sorry.": {
+    "precision": 0.9,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.8780487804878048,
+    "support": 21
+  },
+  "I can't help you with that, I'm sorry.": {
+    "precision": 0.9910179640718563,
+    "recall": 0.993993993993994,
+    "f1-score": 0.992503748125937,
+    "support": 333
+  },
+  "accuracy": 0.9858757062146892,
+  "macro avg": {
+    "precision": 0.9455089820359281,
+    "recall": 0.9255684255684256,
+    "f1-score": 0.9352762643068708,
+    "support": 354
+  },
+  "weighted avg": {
+    "precision": 0.9856185933218308,
+    "recall": 0.9858757062146892,
+    "f1-score": 0.9857140466558784,
+    "support": 354
+  }
+}
