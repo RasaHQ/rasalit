@@ -10,6 +10,10 @@ def app_path(py_file):
     return found_path
 
 
-def run_streamlit_app(subfolder, filename="app.py", port=8501):
+def run_streamlit_app(subfolder, filename="app.py", port=8501, **kwargs):
     app = app_path(os.path.join("apps", subfolder, filename))
-    subprocess.run(["streamlit", "run", "--server.port", str(port), app])
+    cmd = ["streamlit", "run", "--server.port", str(port), app, "--"]
+    for key, value in kwargs.items():
+        cmd += [f"--{key}", f"{value}"]
+    print(" ".join(cmd))
+    subprocess.run(cmd)
