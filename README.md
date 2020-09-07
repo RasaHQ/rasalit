@@ -2,18 +2,28 @@
 
 # RasaLit
 
-A collection of helpful viewers that help with understanding for Rasa NLU. Some of these views are made using [streamlit](https://github.com/streamlit/streamlit), hence the wink in the name.
+A collection of helpful viewers that help with understand Rasa NLU components. Some of these views are made using [streamlit](https://github.com/streamlit/streamlit), hence the wink in the name. 
 
 Feedback is welcome.
 
-## Produced
+## Contribute
 
-This project was initiated at [Rasa](https://rasa.com) as a fun side project
-that supports the research and developer advocacy teams at Rasa.
+There are many ways you can contribute to this project. 
 
-It is maintained by [Vincent D. Warmerdam](https://twitter.com/fishnets88), Research Advocate at Rasa.
+- You can suggest new features.
+- You can help review new features. 
+- You can submit new components.
+- You can let us know if there are bugs.
+- You can let us know if the components in this library help you.
+
+Feel free to start the discussion by opening an issue on this repository. Before submitting code
+to the repository it would help if you first create an issue so that the maintainers can disucss
+the changes you would like to contribute. You can ping the maintainer (alias: **koaning**) both in the issues
+here as well as on the [Rasa forum](https://forum.rasa.com) if you have any questions.
 
 ## Installation
+
+You can install via pip by linking to this github repository.
 
 ```
 python -m pip install git+https://github.com/RasaHQ/rasalit
@@ -47,7 +57,7 @@ But it may be safer to run like so;
   Network URL: http://192.168.1.28:8502
 ```
 
-## Viewers
+## Features
 
 The app contains a collection of viewers that each specialize in a seperate task.
 
@@ -56,7 +66,7 @@ The app contains a collection of viewers that each specialize in a seperate task
 Example Usage:
 
 ```
-> rasalit overview --port 8501
+> rasalit diet-explorer --port 8501
 ```
 
 This will start a server locally on port 8501 that will display an interactive visualisation of the DIET architecture.
