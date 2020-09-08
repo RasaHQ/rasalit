@@ -26,5 +26,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -e ".[dev]"
+    - name: Train Rasa Models
+      run: python -m rasa train --config tests/demo/config.yml --data tests/demo/data --domain tests/demo/domain.yml --out tests/demo/models
     - name: Run Checking Mechanisms
       run: make check
