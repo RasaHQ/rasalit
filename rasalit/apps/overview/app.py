@@ -1,7 +1,12 @@
 import argparse
 import streamlit as st
 import altair as alt
-from rasalit.apps.overview.common import read_reports, remove, mk_viewable
+from rasalit.apps.overview.common import (
+    read_reports,
+    remove,
+    mk_viewable,
+    create_altair_chart,
+)
 
 parser = argparse.ArgumentParser(description="This app lists animals")
 parser.add_argument("--folder", help="Pass the extra folder.")
@@ -45,35 +50,13 @@ df_response_subset = df_response.pipe(remove, configs=configs, metrics=metrics)
 
 if "intent" in items:
     st.markdown("## Intent Summary")
-    c = (
-        alt.Chart(df_intent_subset)
-        .mark_bar()
-        .encode(
-            y="config:N",
-            x="value:Q",
-            color="config:N",
-            row="variable:N",
-            tooltip=["config", "value"],
-        )
-    )
-    st.altair_chart(c)
+    st.altair_chart(create_altair_chart(df_intent_subset))
 
     if show_raw_data:
         st.write(df_intent_subset.pipe(mk_viewable))
 
 if "entity" in items:
     st.markdown("## Entity Summary")
-    c = (
-        alt.Chart(df_entity_subset)
-        .mark_bar()
-        .encode(
-            y="config:N",
-            x="value:Q",
-            color="config:N",
-            row="variable:N",
-            tooltip=["config", "value"],
-        )
-    )
-    st.altair_chart(c)
+    st.altair_chart(create_altair_chart(df_entity_subset))
     if show_raw_data:
         st.write(df_intent_subset.pipe(mk_viewable))

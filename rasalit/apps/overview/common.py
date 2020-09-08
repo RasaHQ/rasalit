@@ -1,6 +1,7 @@
 import json
 import pathlib
 import pandas as pd
+import altair as alt
 
 
 def read_reports(folder, report="intent"):
@@ -23,3 +24,17 @@ def remove(dataf, configs, metrics):
 
 def mk_viewable(dataf):
     return dataf.pivot("config", "variable").droplevel(0, axis=1).reset_index()
+
+
+def create_altair_chart(dataf):
+    return (
+        alt.Chart(dataf)
+        .mark_bar()
+        .encode(
+            y="config:N",
+            x="value:Q",
+            color="config:N",
+            row="variable:N",
+            tooltip=["config", "value"],
+        )
+    )
