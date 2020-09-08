@@ -32,11 +32,15 @@ def create_altair_chart(dataf):
     )
 
 
-def create_displacy_chart(tokens, entities):
+def _mk_spacy_doc(tokens, entities):
     nlp = spacy.blank("en")
-
     doc = Doc(nlp.vocab, words=tokens, spaces=[True for t in tokens])
     for ent in entities:
         span = doc.char_span(ent["start"], ent["end"], label=ent["entity"])
         doc.ents = list(doc.ents) + [span]
+    return doc
+
+
+def create_displacy_chart(tokens, entities):
+    doc = _mk_spacy_doc(tokens, entities)
     return displacy.render(doc, style="ent")

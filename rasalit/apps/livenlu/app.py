@@ -2,7 +2,6 @@ import pathlib
 import argparse
 
 import pandas as pd
-import altair as alt
 import streamlit as st
 from rasa.nlu.training_data import Message
 
@@ -22,7 +21,7 @@ model_folder = args.folder
 st.markdown("# Rasa NLU Model Playground")
 st.markdown("You can select a model on the left to interact with.")
 
-model_files = [str(p.parts[-1]) for p in pathlib.Path(model_folder).glob("*")]
+model_files = [str(p.parts[-1]) for p in pathlib.Path(model_folder).glob("*.tar.gz")]
 model_file = st.sidebar.selectbox("What model do you want to use", model_files)
 
 interpreter = load_interpreter(model_folder, model_file)
@@ -36,6 +35,8 @@ for i, element in enumerate(interpreter.pipeline):
 
 nlu_dict = msg.as_dict_nlu()
 tokens = [t.text for t in nlu_dict["tokens"] if t.text != "__CLS__"]
+
+print(nlu_dict)
 
 st.markdown("## Tokens and Entities")
 st.write(
