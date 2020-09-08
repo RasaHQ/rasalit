@@ -1,6 +1,7 @@
 import argparse
+
 import streamlit as st
-import altair as alt
+
 from rasalit.apps.overview.common import (
     read_reports,
     remove,
