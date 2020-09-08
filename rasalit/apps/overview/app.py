@@ -48,7 +48,13 @@ if "intent" in items:
     c = (
         alt.Chart(df_intent_subset)
         .mark_bar()
-        .encode(y="config:N", x="value:Q", color="config:N", row="variable:N")
+        .encode(
+            y="config:N",
+            x="value:Q",
+            color="config:N",
+            row="variable:N",
+            tooltip=["config", "value"],
+        )
     )
     st.altair_chart(c)
 
@@ -60,7 +66,13 @@ if "entity" in items:
     c = (
         alt.Chart(df_entity_subset)
         .mark_bar()
-        .encode(y="config:N", x="value:Q", color="config:N", row="variable:N")
+        .encode(
+            y="config:N",
+            x="value:Q",
+            color="config:N",
+            row="variable:N",
+            tooltip=["config", "value"],
+        )
     )
     st.altair_chart(c)
     if show_raw_data:

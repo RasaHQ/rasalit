@@ -2,16 +2,16 @@
 
 # RasaLit
 
-A collection of helpful viewers that help with understand Rasa NLU components. Some of these views are made using [streamlit](https://github.com/streamlit/streamlit), hence the wink in the name. 
+A collection of helpful viewers that help with understand Rasa NLU components. Some of these views are made using [streamlit](https://github.com/streamlit/streamlit), hence the wink in the name.
 
 Feedback is welcome.
 
 ## Contribute
 
-There are many ways you can contribute to this project. 
+There are many ways you can contribute to this project.
 
 - You can suggest new features.
-- You can help review new features. 
+- You can help review new features.
 - You can submit new components.
 - You can let us know if there are bugs.
 - You can let us know if the components in this library help you.
@@ -61,31 +61,18 @@ But it may be safer to run like so;
 
 The app contains a collection of viewers that each specialize in a seperate task.
 
-### `diet-explorer`
-
-Example Usage:
-
-```
-> rasalit diet-explorer --port 8501
-```
-
-This will start a server locally on port 8501 that will display an interactive visualisation of the DIET architecture.
-
-![](docs/diet-gif.gif)
-
 ### `overview`
 
+![](docs/overview.gif)
+
 Example Usage:
 
 ```
-> rasalit overview --port 8501
+> python -m rasalit overview --folder gridresults --port 8501
 ```
 
-This command is run via;
-
-```
-> python -m rasalit overview --folder gridresults
-```
+This will start a server locally on port that will displace an interactive
+dashboard of all your NLU gridsearch data.
 
 To fully benefit from this feature you'll need to run some models first.
 You can run cross validation of models in Rasa via the command line:
@@ -107,4 +94,16 @@ you can run the `rasalit overview --folder gridresults` command from the same
 folder where you ran the `rasa test` command. You'll get some simple charts
  that summarise the intent/entity performance.
 
-![](docs/intents.png)
+
+### `diet-explorer`
+
+![](docs/diet-gif.gif)
+
+Example Usage:
+
+```
+> rasalit diet-explorer --port 8501
+```
+
+This will start a server locally on port 8501 that will display an interactive
+visualisation of the DIET architecture.
