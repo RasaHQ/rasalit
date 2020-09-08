@@ -2,7 +2,9 @@
 
 # RasaLit
 
-A collection of helpful viewers that help with understand Rasa NLU components. Some of these views are made using [streamlit](https://github.com/streamlit/streamlit), hence the wink in the name.
+A collection of helpful viewers that help with understand Rasa NLU components.
+Some of these views are made using
+[streamlit](https://github.com/streamlit/streamlit), hence the wink in the name.
 
 Feedback is welcome.
 
@@ -16,10 +18,12 @@ There are many ways you can contribute to this project.
 - You can let us know if there are bugs.
 - You can let us know if the components in this library help you.
 
-Feel free to start the discussion by opening an issue on this repository. Before submitting code
-to the repository it would help if you first create an issue so that the maintainers can disucss
-the changes you would like to contribute. You can ping the maintainer (alias: **koaning**) both in the issues
-here as well as on the [Rasa forum](https://forum.rasa.com) if you have any questions.
+Feel free to start the discussion by opening an issue on this repository.
+Before submitting code to the repository it would help if you first create
+an issue so that the maintainers can disucss the changes you would like
+to contribute. You can ping the maintainer (alias: **koaning**) both in
+the issues here as well as on the [Rasa forum](https://forum.rasa.com)
+if you have any questions.
 
 ## Installation
 
