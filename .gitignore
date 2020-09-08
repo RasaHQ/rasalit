@@ -131,3 +131,8 @@ dmypy.json
 .vscode
 Untitled*.ipynb
 rasalit/html/parallelcoords/data.csv
+
+rasalit/apps/*/frontend/node_modules/
+.DS_Store
+**/.DS_Store
+example.csv

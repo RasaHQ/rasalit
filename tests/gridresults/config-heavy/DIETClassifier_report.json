@@ -1,0 +1,80 @@
+{
+  "nlu_part": {
+    "precision": 0.9801980198019802,
+    "recall": 0.853448275862069,
+    "f1-score": 0.9124423963133641,
+    "support": 116
+  },
+  "language": {
+    "precision": 0.9792387543252595,
+    "recall": 0.9758620689655172,
+    "f1-score": 0.9775474956822108,
+    "support": 290
+  },
+  "job_function": {
+    "precision": 0.8818897637795275,
+    "recall": 0.632768361581921,
+    "f1-score": 0.7368421052631579,
+    "support": 177
+  },
+  "product": {
+    "precision": 0.9387254901960784,
+    "recall": 0.916267942583732,
+    "f1-score": 0.9273607748184018,
+    "support": 418
+  },
+  "current_api": {
+    "precision": 1.0,
+    "recall": 0.7252747252747253,
+    "f1-score": 0.840764331210191,
+    "support": 91
+  },
+  "entity": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 19
+  },
+  "name": {
+    "precision": 0.9315789473684211,
+    "recall": 0.8388625592417062,
+    "f1-score": 0.8827930174563592,
+    "support": 211
+  },
+  "company": {
+    "precision": 0.36363636363636365,
+    "recall": 0.1958041958041958,
+    "f1-score": 0.2545454545454546,
+    "support": 143
+  },
+  "location": {
+    "precision": 0.9705882352941176,
+    "recall": 0.75,
+    "f1-score": 0.846153846153846,
+    "support": 44
+  },
+  "user_type": {
+    "precision": 1.0,
+    "recall": 0.7222222222222222,
+    "f1-score": 0.8387096774193548,
+    "support": 18
+  },
+  "micro avg": {
+    "precision": 0.9149425287356322,
+    "recall": 0.7819253438113949,
+    "f1-score": 0.8432203389830508,
+    "support": 1527
+  },
+  "macro avg": {
+    "precision": 0.8045855574401749,
+    "recall": 0.6610510351536089,
+    "f1-score": 0.7217159098862339,
+    "support": 1527
+  },
+  "weighted avg": {
+    "precision": 0.881750486175488,
+    "recall": 0.7819253438113949,
+    "f1-score": 0.8244246054182051,
+    "support": 1527
+  }
+}

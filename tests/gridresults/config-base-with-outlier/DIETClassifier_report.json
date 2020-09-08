@@ -1,0 +1,80 @@
+{
+  "current_api": {
+    "precision": 0.948051948051948,
+    "recall": 0.8021978021978022,
+    "f1-score": 0.8690476190476191,
+    "support": 91
+  },
+  "language": {
+    "precision": 0.9563758389261745,
+    "recall": 0.9827586206896551,
+    "f1-score": 0.9693877551020409,
+    "support": 290
+  },
+  "job_function": {
+    "precision": 0.8529411764705882,
+    "recall": 0.655367231638418,
+    "f1-score": 0.7412140575079873,
+    "support": 177
+  },
+  "name": {
+    "precision": 0.9196428571428571,
+    "recall": 0.8879310344827587,
+    "f1-score": 0.9035087719298246,
+    "support": 232
+  },
+  "product": {
+    "precision": 0.9223529411764706,
+    "recall": 0.937799043062201,
+    "f1-score": 0.930011862396204,
+    "support": 418
+  },
+  "user_type": {
+    "precision": 1.0,
+    "recall": 0.9444444444444444,
+    "f1-score": 0.9714285714285714,
+    "support": 18
+  },
+  "location": {
+    "precision": 0.8222222222222222,
+    "recall": 0.8043478260869565,
+    "f1-score": 0.8131868131868132,
+    "support": 46
+  },
+  "company": {
+    "precision": 0.5774647887323944,
+    "recall": 0.3037037037037037,
+    "f1-score": 0.39805825242718446,
+    "support": 135
+  },
+  "nlu_part": {
+    "precision": 0.9917355371900827,
+    "recall": 0.9302325581395349,
+    "f1-score": 0.96,
+    "support": 129
+  },
+  "entity": {
+    "precision": 0.2,
+    "recall": 0.05,
+    "f1-score": 0.08000000000000002,
+    "support": 20
+  },
+  "micro avg": {
+    "precision": 0.9076814658210007,
+    "recall": 0.8277634961439588,
+    "f1-score": 0.8658823529411764,
+    "support": 1556
+  },
+  "macro avg": {
+    "precision": 0.8190787309912737,
+    "recall": 0.7298782264445474,
+    "f1-score": 0.7635843703026245,
+    "support": 1556
+  },
+  "weighted avg": {
+    "precision": 0.8863797134088276,
+    "recall": 0.8277634961439588,
+    "f1-score": 0.8507903829249029,
+    "support": 1556
+  }
+}

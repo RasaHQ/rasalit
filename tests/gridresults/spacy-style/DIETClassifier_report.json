@@ -1,0 +1,80 @@
+{
+  "nlu_part": {
+    "precision": 0.8867924528301887,
+    "recall": 1.0,
+    "f1-score": 0.9400000000000001,
+    "support": 94
+  },
+  "location": {
+    "precision": 0.8387096774193549,
+    "recall": 0.6190476190476191,
+    "f1-score": 0.7123287671232876,
+    "support": 42
+  },
+  "entity": {
+    "precision": 0.5,
+    "recall": 0.125,
+    "f1-score": 0.2,
+    "support": 16
+  },
+  "user_type": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 18
+  },
+  "product": {
+    "precision": 0.916058394160584,
+    "recall": 0.943609022556391,
+    "f1-score": 0.9296296296296296,
+    "support": 266
+  },
+  "name": {
+    "precision": 0.609375,
+    "recall": 0.2549019607843137,
+    "f1-score": 0.35944700460829493,
+    "support": 153
+  },
+  "job_function": {
+    "precision": 0.7686567164179104,
+    "recall": 0.64375,
+    "f1-score": 0.7006802721088435,
+    "support": 160
+  },
+  "company": {
+    "precision": 0.3695652173913043,
+    "recall": 0.18478260869565216,
+    "f1-score": 0.24637681159420283,
+    "support": 92
+  },
+  "language": {
+    "precision": 0.9311475409836065,
+    "recall": 0.9861111111111112,
+    "f1-score": 0.9578414839797639,
+    "support": 288
+  },
+  "current_api": {
+    "precision": 0.9111111111111111,
+    "recall": 0.9111111111111111,
+    "f1-score": 0.9111111111111111,
+    "support": 45
+  },
+  "micro avg": {
+    "precision": 0.8470474346563408,
+    "recall": 0.7453151618398637,
+    "f1-score": 0.792931581332125,
+    "support": 1174
+  },
+  "macro avg": {
+    "precision": 0.7481416110314061,
+    "recall": 0.6668313433306198,
+    "f1-score": 0.6814557937297991,
+    "support": 1174
+  },
+  "weighted avg": {
+    "precision": 0.803360963623944,
+    "recall": 0.7453151618398637,
+    "f1-score": 0.7587879986580526,
+    "support": 1174
+  }
+}

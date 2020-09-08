@@ -1,0 +1,4564 @@
+[
+  {
+    "text": "jezz",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 0,
+        "end": 4,
+        "extractor": "DIETClassifier",
+        "value": "jezz"
+      }
+    ]
+  },
+  {
+    "text": "which messaging channels are compatible with rasa?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 45,
+        "end": 49,
+        "extractor": "DIETClassifier",
+        "value": "rasa"
+      }
+    ]
+  },
+  {
+    "text": "diffrence between rasa core and rasa nlu",
+    "entities": [
+      {
+        "start": 23,
+        "end": 27,
+        "value": "core",
+        "entity": "product"
+      },
+      {
+        "start": 37,
+        "end": 40,
+        "value": "nlu",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 23,
+        "end": 27,
+        "extractor": "DIETClassifier",
+        "value": "core"
+      },
+      {
+        "entity": "product",
+        "start": 32,
+        "end": 40,
+        "extractor": "DIETClassifier",
+        "value": "rasa nlu"
+      }
+    ]
+  },
+  {
+    "text": "How is Rasa X different from Rasa?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "Rasa X",
+        "entity": "product"
+      },
+      {
+        "start": 29,
+        "end": 33,
+        "value": "Rasa",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 12,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "X"
+      }
+    ]
+  },
+  {
+    "text": "i am using rasa, why would i need rasa x?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "value": "rasa",
+        "entity": "product"
+      },
+      {
+        "start": 34,
+        "end": 40,
+        "value": "rasa x",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want Vietnamese language processing",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "value": "Vietnamese",
+        "entity": "language"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can I use rasa also for another laguage?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 10,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "rasa"
+      }
+    ]
+  },
+  {
+    "text": "do you have tutorials about nlu",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 28,
+        "end": 31,
+        "extractor": "DIETClassifier",
+        "value": "nlu"
+      }
+    ]
+  },
+  {
+    "text": "you have speech recognition?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 16,
+        "end": 27,
+        "extractor": "DIETClassifier",
+        "value": "recognition"
+      }
+    ]
+  },
+  {
+    "text": "List the characteristics of rasa forum?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 9,
+        "end": 24,
+        "extractor": "DIETClassifier",
+        "value": "characteristics"
+      }
+    ]
+  },
+  {
+    "text": "I'm looking for a Spanish restaurant.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 18,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "Spanish"
+      }
+    ]
+  },
+  {
+    "text": "what is the time in Sydney?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "Sydney",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Are we in for a scorcher?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 16,
+        "end": 24,
+        "extractor": "DIETClassifier",
+        "value": "scorcher"
+      }
+    ]
+  },
+  {
+    "text": "what about the weather in Lüneburg",
+    "entities": [
+      {
+        "start": 26,
+        "end": 34,
+        "value": "Lüneburg",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is the weather in zurich?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "zurich",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "whats the temperature in delhi?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 30,
+        "value": "delhi",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is rasa",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 8,
+        "end": 12,
+        "extractor": "DIETClassifier",
+        "value": "rasa"
+      }
+    ]
+  },
+  {
+    "text": "what are the events for China?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 29,
+        "value": "China",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the events for New York?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 32,
+        "value": "New York",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 24,
+        "end": 32,
+        "extractor": "DIETClassifier",
+        "value": "New York"
+      }
+    ]
+  },
+  {
+    "text": "What is the next event for Seattle?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 34,
+        "value": "Seattle",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ciao",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 4,
+        "extractor": "DIETClassifier",
+        "value": "ciao"
+      }
+    ]
+  },
+  {
+    "text": "toodle-oo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 6,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "-"
+      }
+    ]
+  },
+  {
+    "text": "i'd like to call Johnnie Essig",
+    "entities": [
+      {
+        "start": 17,
+        "end": 30,
+        "value": "Johnnie Essig",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 17,
+        "end": 24,
+        "extractor": "DIETClassifier",
+        "value": "Johnnie"
+      }
+    ]
+  },
+  {
+    "text": "i guess it means - no",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 11,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "means"
+      },
+      {
+        "entity": "company",
+        "start": 17,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "-"
+      }
+    ]
+  },
+  {
+    "text": "I am Robert Starks",
+    "entities": [
+      {
+        "start": 5,
+        "end": 18,
+        "value": "Robert Starks",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am a head of business intelligence",
+    "entities": [
+      {
+        "start": 7,
+        "end": 36,
+        "value": "head of business intelligence",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am a driver",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 7,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "driver"
+      }
+    ]
+  },
+  {
+    "text": "I am responsible for our innovation department",
+    "entities": [
+      {
+        "start": 25,
+        "end": 46,
+        "value": "innovation department",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I work as a frontend dev",
+    "entities": [
+      {
+        "start": 12,
+        "end": 24,
+        "value": "frontend dev",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 21,
+        "end": 24,
+        "extractor": "DIETClassifier",
+        "value": "dev"
+      }
+    ]
+  },
+  {
+    "text": "I work at EXAMPLE insurance group as Head of Innovation",
+    "entities": [
+      {
+        "start": 10,
+        "end": 33,
+        "value": "EXAMPLE insurance group",
+        "entity": "company"
+      },
+      {
+        "start": 37,
+        "end": 55,
+        "value": "Head of Innovation",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I work at the NYT",
+    "entities": [
+      {
+        "start": 14,
+        "end": 17,
+        "value": "NYT",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I work for Stanford University",
+    "entities": [
+      {
+        "start": 11,
+        "end": 30,
+        "value": "Stanford University",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I work in innovation",
+    "entities": [
+      {
+        "start": 10,
+        "end": 20,
+        "value": "innovation",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm Gladys Bynum",
+    "entities": [
+      {
+        "start": 4,
+        "end": 16,
+        "value": "Gladys Bynum",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm Harvey Cordano",
+    "entities": [
+      {
+        "start": 4,
+        "end": 18,
+        "value": "Harvey Cordano",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 4,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "Harvey"
+      },
+      {
+        "entity": "product",
+        "start": 11,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "Cordano"
+      }
+    ]
+  },
+  {
+    "text": "I'm Virginia Mason",
+    "entities": [
+      {
+        "start": 4,
+        "end": 18,
+        "value": "Virginia Mason",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm a construction worker",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "construction worker",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm a janitor",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "janitor",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 6,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "janitor"
+      }
+    ]
+  },
+  {
+    "text": "I'm a machine learning engineer",
+    "entities": [
+      {
+        "start": 6,
+        "end": 31,
+        "value": "machine learning engineer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 23,
+        "end": 31,
+        "extractor": "DIETClassifier",
+        "value": "engineer"
+      }
+    ]
+  },
+  {
+    "text": "I'm a python developer",
+    "entities": [
+      {
+        "start": 6,
+        "end": 22,
+        "value": "python developer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 13,
+        "end": 22,
+        "extractor": "DIETClassifier",
+        "value": "developer"
+      }
+    ]
+  },
+  {
+    "text": "I'm in project mgmt",
+    "entities": [
+      {
+        "start": 7,
+        "end": 19,
+        "value": "project mgmt",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 7,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "project"
+      }
+    ]
+  },
+  {
+    "text": "I'm the lead engineer",
+    "entities": [
+      {
+        "start": 8,
+        "end": 21,
+        "value": "lead engineer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 13,
+        "end": 21,
+        "extractor": "DIETClassifier",
+        "value": "engineer"
+      }
+    ]
+  },
+  {
+    "text": "My name is Ashleigh Mees",
+    "entities": [
+      {
+        "start": 11,
+        "end": 24,
+        "value": "Ashleigh Mees",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "My name is chelsea Parker",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "chelsea Parker",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "Parker"
+      }
+    ]
+  },
+  {
+    "text": "My name is Kenneth Sherman",
+    "entities": [
+      {
+        "start": 11,
+        "end": 26,
+        "value": "Kenneth Sherman",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 19,
+        "end": 26,
+        "extractor": "DIETClassifier",
+        "value": "Sherman"
+      }
+    ]
+  },
+  {
+    "text": "My name is Lee George",
+    "entities": [
+      {
+        "start": 11,
+        "end": 21,
+        "value": "Lee George",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 11,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "Lee"
+      }
+    ]
+  },
+  {
+    "text": "My name is Louise Caudill",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "Louise Caudill",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "My name is Shane Goodyear",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "Shane Goodyear",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 11,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "Shane"
+      }
+    ]
+  },
+  {
+    "text": "My name is Sondra Boyd",
+    "entities": [
+      {
+        "start": 11,
+        "end": 22,
+        "value": "Sondra Boyd",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 11,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "Sondra"
+      }
+    ]
+  },
+  {
+    "text": "The name of the company is Daimler",
+    "entities": [
+      {
+        "start": 27,
+        "end": 34,
+        "value": "Daimler",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 16,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "company"
+      },
+      {
+        "entity": "job_function",
+        "start": 27,
+        "end": 34,
+        "extractor": "DIETClassifier",
+        "value": "Daimler"
+      }
+    ]
+  },
+  {
+    "text": "This is Norma Taylor",
+    "entities": [
+      {
+        "start": 8,
+        "end": 20,
+        "value": "Norma Taylor",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ACME Mops",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "ACME Mops",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Allianz",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Allianz",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "Allianz"
+      }
+    ]
+  },
+  {
+    "text": "Angel Robinson company",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "Angel Robinson company",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 6,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "Robinson"
+      },
+      {
+        "entity": "company",
+        "start": 15,
+        "end": 22,
+        "extractor": "DIETClassifier",
+        "value": "company"
+      }
+    ]
+  },
+  {
+    "text": "BigBotsInc",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "BigBotsInc",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "BigBots",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "BigBots",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Bosch",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Bosch",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Club Mate",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Club Mate",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "David Carter",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "David Carter",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Elise",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Elise",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Founder",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Founder",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Full stack.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Full stack",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "Full stack"
+      },
+      {
+        "entity": "name",
+        "start": 10,
+        "end": 11,
+        "extractor": "DIETClassifier",
+        "value": "."
+      }
+    ]
+  },
+  {
+    "text": "IT manager",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "IT manager",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 3,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "manager"
+      }
+    ]
+  },
+  {
+    "text": "Im Phyllis Howard",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Im Phyllis Howard",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 3,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "Phyllis"
+      }
+    ]
+  },
+  {
+    "text": "Jane Baines",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Jane Baines",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 4,
+        "extractor": "DIETClassifier",
+        "value": "Jane"
+      }
+    ]
+  },
+  {
+    "text": "Keith Donnell PhD",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Keith Donnell",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Linda Mchone",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Linda Mchone",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "McKinsey Germany",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "McKinsey Germany",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 9,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "Germany"
+      }
+    ]
+  },
+  {
+    "text": "Michelle Vinion",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Michelle Vinion",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 8,
+        "extractor": "DIETClassifier",
+        "value": "Michelle"
+      }
+    ]
+  },
+  {
+    "text": "N26",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "N26",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Owner",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Owner",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Rasa",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Rasa",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Scalable Minds",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Scalable Minds",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Software engineer.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Software engineer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "Software engineer"
+      },
+      {
+        "entity": "name",
+        "start": 17,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "."
+      }
+    ]
+  },
+  {
+    "text": "Steven Carter's company",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Steven Carter",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Terri Cline",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Terri Cline",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "allianz",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "allianz",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "allianz"
+      }
+    ]
+  },
+  {
+    "text": "amounts",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "amounts",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "brand manager",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "brand manager",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 0,
+        "end": 5,
+        "extractor": "DIETClassifier",
+        "value": "brand"
+      },
+      {
+        "entity": "job_function",
+        "start": 6,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "manager"
+      }
+    ]
+  },
+  {
+    "text": "clue",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "clue",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "companies",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "companies",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 0,
+        "end": 9,
+        "extractor": "DIETClassifier",
+        "value": "companies"
+      }
+    ]
+  },
+  {
+    "text": "custom entity",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "custom entity",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 7,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "entity"
+      }
+    ]
+  },
+  {
+    "text": "data analyst",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "data analyst",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 4,
+        "extractor": "DIETClassifier",
+        "value": "data"
+      }
+    ]
+  },
+  {
+    "text": "growth manager",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "growth manager",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 7,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "manager"
+      }
+    ]
+  },
+  {
+    "text": "hindi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "hindi",
+        "entity": "language"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "klara health",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "klara health",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ml researcher",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "ml researcher",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 3,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "researcher"
+      }
+    ]
+  },
+  {
+    "text": "numbers",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "numbers",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "rasa",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rasa",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "time",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "time",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "vodafone",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "vodafone",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "a chatbot for mops - mopbot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 19,
+        "end": 20,
+        "extractor": "DIETClassifier",
+        "value": "-"
+      }
+    ]
+  },
+  {
+    "text": "chief nerd at rasa technologies",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 6,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "nerd"
+      }
+    ]
+  },
+  {
+    "text": "company: uber",
+    "entities": [
+      {
+        "start": 9,
+        "end": 13,
+        "value": "uber",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "company"
+      }
+    ]
+  },
+  {
+    "text": "driver",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 6,
+        "extractor": "DIETClassifier",
+        "value": "driver"
+      }
+    ]
+  },
+  {
+    "text": "eisenkleber limited co kg",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 20,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "co kg"
+      }
+    ]
+  },
+  {
+    "text": "extracting durations",
+    "entities": [
+      {
+        "start": 11,
+        "end": 20,
+        "value": "durations",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 0,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "extracting"
+      }
+    ]
+  },
+  {
+    "text": "how to extract relationship",
+    "entities": [
+      {
+        "start": 15,
+        "end": 27,
+        "value": "relationship",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 7,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "extract"
+      }
+    ]
+  },
+  {
+    "text": "i am self emplayed",
+    "entities": [
+      {
+        "start": 5,
+        "end": 18,
+        "value": "self emplayed",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want to built a Eric Jones bot",
+    "entities": [
+      {
+        "start": 18,
+        "end": 28,
+        "value": "Eric Jones",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want to extract names",
+    "entities": [
+      {
+        "start": 18,
+        "end": 23,
+        "value": "names",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 10,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "extract"
+      }
+    ]
+  },
+  {
+    "text": "i work in biz dev",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "biz dev",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 14,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "dev"
+      }
+    ]
+  },
+  {
+    "text": "i'm Herbert Ball",
+    "entities": [
+      {
+        "start": 4,
+        "end": 16,
+        "value": "Herbert Ball",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm head of sales",
+    "entities": [
+      {
+        "start": 4,
+        "end": 17,
+        "value": "head of sales",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 12,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "sales"
+      }
+    ]
+  },
+  {
+    "text": "i'm a solutions architect",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "solutions architect",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm a developer",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 6,
+        "end": 15,
+        "extractor": "DIETClassifier",
+        "value": "developer"
+      }
+    ]
+  },
+  {
+    "text": "i'm a glibber and glitter salesman",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 26,
+        "end": 34,
+        "extractor": "DIETClassifier",
+        "value": "salesman"
+      }
+    ]
+  },
+  {
+    "text": "it's Robert Weir",
+    "entities": [
+      {
+        "start": 5,
+        "end": 16,
+        "value": "Robert Weir",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's a small company from the US, the name is Microsoft",
+    "entities": [
+      {
+        "start": 46,
+        "end": 55,
+        "value": "Microsoft",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 30,
+        "end": 32,
+        "extractor": "DIETClassifier",
+        "value": "US"
+      },
+      {
+        "entity": "company",
+        "start": 46,
+        "end": 55,
+        "extractor": "DIETClassifier",
+        "value": "Microsoft"
+      }
+    ]
+  },
+  {
+    "text": "it's a tech company, apple",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "apple",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 12,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "company"
+      }
+    ]
+  },
+  {
+    "text": "my business mail is s_Dibenedetto@Simpson.net",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 3,
+        "end": 11,
+        "extractor": "DIETClassifier",
+        "value": "business"
+      }
+    ]
+  },
+  {
+    "text": "my function is to serve butter",
+    "entities": [
+      {
+        "start": 15,
+        "end": 30,
+        "value": "to serve butter",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my name is betty mclendon",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "betty mclendon",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 17,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "mclendon"
+      }
+    ]
+  },
+  {
+    "text": "my name is Frances Kunkle",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "Frances Kunkle",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 19,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "Kunkle"
+      }
+    ]
+  },
+  {
+    "text": "my name is Nigel Partida",
+    "entities": [
+      {
+        "start": 11,
+        "end": 24,
+        "value": "Nigel Partida",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 17,
+        "end": 24,
+        "extractor": "DIETClassifier",
+        "value": "Partida"
+      }
+    ]
+  },
+  {
+    "text": "my name is susan crandall",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "susan crandall",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 11,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "susan"
+      }
+    ]
+  },
+  {
+    "text": "my name is Tabitha Schoenthal",
+    "entities": [
+      {
+        "start": 11,
+        "end": 29,
+        "value": "Tabitha Schoenthal",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 11,
+        "end": 29,
+        "extractor": "DIETClassifier",
+        "value": "Tabitha Schoenthal"
+      }
+    ]
+  },
+  {
+    "text": "sales bot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 5,
+        "extractor": "DIETClassifier",
+        "value": "sales"
+      }
+    ]
+  },
+  {
+    "text": "the ice cream factory is the company",
+    "entities": [
+      {
+        "start": 4,
+        "end": 21,
+        "value": "ice cream factory",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Bom dia",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 4,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "dia"
+      }
+    ]
+  },
+  {
+    "text": "hai",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 0,
+        "end": 3,
+        "extractor": "DIETClassifier",
+        "value": "hai"
+      }
+    ]
+  },
+  {
+    "text": "hello, my name is Charles Pfeffer",
+    "entities": [
+      {
+        "start": 18,
+        "end": 33,
+        "value": "Charles Pfeffer",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 18,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "Charles"
+      }
+    ]
+  },
+  {
+    "text": "hi im Amanda Anderson",
+    "entities": [
+      {
+        "start": 6,
+        "end": 21,
+        "value": "Amanda Anderson",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "you're a loser lmao",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 15,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "lmao"
+      }
+    ]
+  },
+  {
+    "text": "Hi, how can i get started with rasa x",
+    "entities": [
+      {
+        "start": 31,
+        "end": 37,
+        "value": "rasa x",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How can I start with RASA on a legacy windows without Python?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 21,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "RASA"
+      }
+    ]
+  },
+  {
+    "text": "and rasa nlu?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "nlu",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 4,
+        "end": 12,
+        "extractor": "DIETClassifier",
+        "value": "rasa nlu"
+      }
+    ]
+  },
+  {
+    "text": "hi, can you help in understanding NLU",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 34,
+        "end": 37,
+        "extractor": "DIETClassifier",
+        "value": "NLU"
+      }
+    ]
+  },
+  {
+    "text": "what rasa_nlu",
+    "entities": [
+      {
+        "start": 5,
+        "end": 13,
+        "value": "rasa_nlu",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Could I talk to Tyrone King?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 27,
+        "value": "Tyrone King",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I need to get Rasa Stack up and running.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 14,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "Rasa"
+      }
+    ]
+  },
+  {
+    "text": "am struck with installation of rasa nlu and core in my mac book",
+    "entities": [
+      {
+        "start": 36,
+        "end": 39,
+        "value": "nlu",
+        "entity": "product"
+      },
+      {
+        "start": 44,
+        "end": 48,
+        "value": "core",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 31,
+        "end": 39,
+        "extractor": "DIETClassifier",
+        "value": "rasa nlu"
+      },
+      {
+        "entity": "product",
+        "start": 44,
+        "end": 48,
+        "extractor": "DIETClassifier",
+        "value": "core"
+      }
+    ]
+  },
+  {
+    "text": "Rasa NLu",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 5,
+        "end": 8,
+        "extractor": "DIETClassifier",
+        "value": "NLu"
+      }
+    ]
+  },
+  {
+    "text": "But you're an english site :(",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 14,
+        "end": 21,
+        "extractor": "DIETClassifier",
+        "value": "english"
+      }
+    ]
+  },
+  {
+    "text": "Do you know Kevin Pelton",
+    "entities": [
+      {
+        "start": 12,
+        "end": 24,
+        "value": "Kevin Pelton",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Why is my TRUST score set to 50 after I completed the registration process?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 16,
+        "end": 21,
+        "extractor": "DIETClassifier",
+        "value": "score"
+      }
+    ]
+  },
+  {
+    "text": "are you using Rasa Core and NLU ?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "Core",
+        "entity": "product"
+      },
+      {
+        "start": 28,
+        "end": 31,
+        "value": "NLU",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 14,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "Rasa Core"
+      },
+      {
+        "entity": "product",
+        "start": 28,
+        "end": 31,
+        "extractor": "DIETClassifier",
+        "value": "NLU"
+      }
+    ]
+  },
+  {
+    "text": "chinese ok?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "chinese"
+      }
+    ]
+  },
+  {
+    "text": "have you ever seen Keith Reilly?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 31,
+        "value": "Keith Reilly",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what do you think about Stanley Ramirez?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 39,
+        "value": "Stanley Ramirez",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is the capital of india",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 23,
+        "end": 28,
+        "extractor": "DIETClassifier",
+        "value": "india"
+      }
+    ]
+  },
+  {
+    "text": "who is the president of india ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 24,
+        "end": 29,
+        "extractor": "DIETClassifier",
+        "value": "india"
+      }
+    ]
+  },
+  {
+    "text": "you're a woman",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 9,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "woman"
+      }
+    ]
+  },
+  {
+    "text": "you are my new bestfriend",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_type",
+        "start": 11,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "new"
+      }
+    ]
+  },
+  {
+    "text": "How can I visualise conversation flow?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "current_api",
+        "start": 33,
+        "end": 37,
+        "extractor": "DIETClassifier",
+        "value": "flow"
+      }
+    ]
+  },
+  {
+    "text": "how to visualise dialogue flow",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "current_api",
+        "start": 17,
+        "end": 30,
+        "extractor": "DIETClassifier",
+        "value": "dialogue flow"
+      }
+    ]
+  },
+  {
+    "text": "How do I use ngrok with rasa x?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 30,
+        "value": "rasa x",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "is rasa core able to run standalone?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 8,
+        "end": 12,
+        "extractor": "DIETClassifier",
+        "value": "core"
+      }
+    ]
+  },
+  {
+    "text": "replace default nlu with custom component",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 16,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "nlu"
+      }
+    ]
+  },
+  {
+    "text": "go ahead",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 3,
+        "end": 8,
+        "extractor": "DIETClassifier",
+        "value": "ahead"
+      }
+    ]
+  },
+  {
+    "text": "what is the name of the smart engineer who creted you ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 17,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "of"
+      },
+      {
+        "entity": "job_function",
+        "start": 30,
+        "end": 38,
+        "extractor": "DIETClassifier",
+        "value": "engineer"
+      }
+    ]
+  },
+  {
+    "text": "who is your boss",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 12,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "boss"
+      }
+    ]
+  },
+  {
+    "text": "how does rasa x relate to rasa core",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 31,
+        "end": 35,
+        "extractor": "DIETClassifier",
+        "value": "core"
+      }
+    ]
+  },
+  {
+    "text": "Do I need both Rasa and Rasa X?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 19,
+        "value": "Rasa",
+        "entity": "product"
+      },
+      {
+        "start": 24,
+        "end": 30,
+        "value": "Rasa X",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 10,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "both Rasa"
+      },
+      {
+        "entity": "product",
+        "start": 24,
+        "end": 30,
+        "extractor": "DIETClassifier",
+        "value": "Rasa X"
+      }
+    ]
+  },
+  {
+    "text": "What's new in Rasa X compared to Rasa?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 20,
+        "value": "Rasa X",
+        "entity": "product"
+      },
+      {
+        "start": 33,
+        "end": 37,
+        "value": "Rasa",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_type",
+        "start": 7,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "new"
+      },
+      {
+        "entity": "product",
+        "start": 19,
+        "end": 20,
+        "extractor": "DIETClassifier",
+        "value": "X"
+      }
+    ]
+  },
+  {
+    "text": "how does rasa x stack up against rasa",
+    "entities": [
+      {
+        "start": 9,
+        "end": 15,
+        "value": "rasa x",
+        "entity": "product"
+      },
+      {
+        "start": 33,
+        "end": 37,
+        "value": "rasa",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "show me comparison between rasa x and [[rasa",
+    "entities": [
+      {
+        "start": 27,
+        "end": 33,
+        "value": "rasa x",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 27,
+        "end": 33,
+        "extractor": "DIETClassifier",
+        "value": "rasa x"
+      },
+      {
+        "entity": "product",
+        "start": 40,
+        "end": 44,
+        "extractor": "DIETClassifier",
+        "value": "rasa"
+      }
+    ]
+  },
+  {
+    "text": "what is rasa x enterprise",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 8,
+        "end": 12,
+        "extractor": "DIETClassifier",
+        "value": "rasa"
+      }
+    ]
+  },
+  {
+    "text": "can I develop using java",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 20,
+        "end": 24,
+        "extractor": "DIETClassifier",
+        "value": "java"
+      }
+    ]
+  },
+  {
+    "text": "Can I use Rasa with Thai language",
+    "entities": [
+      {
+        "start": 20,
+        "end": 24,
+        "value": "Thai",
+        "entity": "language"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the specific languages that rasa is intended to work with?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 45,
+        "end": 53,
+        "extractor": "DIETClassifier",
+        "value": "intended"
+      }
+    ]
+  },
+  {
+    "text": "how can I add new language to rasa",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_type",
+        "start": 14,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "new"
+      }
+    ]
+  },
+  {
+    "text": "how can I add new language to rasa core",
+    "entities": [
+      {
+        "start": 35,
+        "end": 39,
+        "value": "core",
+        "entity": "product"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_type",
+        "start": 14,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "new"
+      },
+      {
+        "entity": "product",
+        "start": 35,
+        "end": 39,
+        "extractor": "DIETClassifier",
+        "value": "core"
+      }
+    ]
+  },
+  {
+    "text": "what is the variety of languages rasa uses",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 12,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "variety"
+      }
+    ]
+  },
+  {
+    "text": "could I program spanish speaking bots?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 16,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "spanish"
+      }
+    ]
+  },
+  {
+    "text": "is rasa software that is classified as open source?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 25,
+        "end": 35,
+        "extractor": "DIETClassifier",
+        "value": "classified"
+      }
+    ]
+  },
+  {
+    "text": "Will it be correct if I said I can build a voice bot with rasa?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 11,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "correct"
+      }
+    ]
+  },
+  {
+    "text": "do you have voice recognition",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 18,
+        "end": 29,
+        "extractor": "DIETClassifier",
+        "value": "recognition"
+      }
+    ]
+  },
+  {
+    "text": "What's new?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_type",
+        "start": 7,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "new"
+      }
+    ]
+  },
+  {
+    "text": "Do you understand spanish?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 18,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "spanish"
+      }
+    ]
+  },
+  {
+    "text": "what else do you know besides English?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 30,
+        "end": 37,
+        "extractor": "DIETClassifier",
+        "value": "English"
+      }
+    ]
+  },
+  {
+    "text": "i want a french restaurant",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 9,
+        "end": 15,
+        "extractor": "DIETClassifier",
+        "value": "french"
+      }
+    ]
+  },
+  {
+    "text": "i'm looking for a Chinese restaurant",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 18,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "Chinese"
+      }
+    ]
+  },
+  {
+    "text": "weatger",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "weatger"
+      }
+    ]
+  },
+  {
+    "text": "what's the weather like in LA",
+    "entities": [
+      {
+        "start": 27,
+        "end": 29,
+        "value": "LA",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "WHAT IS RASA",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 8,
+        "end": 12,
+        "extractor": "DIETClassifier",
+        "value": "RASA"
+      }
+    ]
+  },
+  {
+    "text": "what is rasa ?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "rasa",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What are the events in Switzerland?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 34,
+        "value": "Switzerland",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is there a Rasa event in San Francisco",
+    "entities": [
+      {
+        "start": 25,
+        "end": 38,
+        "value": "San Francisco",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 29,
+        "end": 38,
+        "extractor": "DIETClassifier",
+        "value": "Francisco"
+      }
+    ]
+  },
+  {
+    "text": "When is the next user group meetup",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 22,
+        "end": 27,
+        "extractor": "DIETClassifier",
+        "value": "group"
+      }
+    ]
+  },
+  {
+    "text": "When is the next event in california?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 36,
+        "value": "california",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the next event in san francisco?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 39,
+        "value": "san francisco",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 30,
+        "end": 39,
+        "extractor": "DIETClassifier",
+        "value": "francisco"
+      }
+    ]
+  },
+  {
+    "text": "When is the next event for India?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 32,
+        "value": "India",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hey, you promised to contact me, but nobody did, I really need to finish that car insurance bot!!!!",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 66,
+        "end": 72,
+        "extractor": "DIETClassifier",
+        "value": "finish"
+      }
+    ]
+  },
+  {
+    "text": "a sales call with Rufus Gardner would be nice",
+    "entities": [
+      {
+        "start": 18,
+        "end": 31,
+        "value": "Rufus Gardner",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ok, well, then a sales call with the fabulous Theodora Estrada",
+    "entities": [
+      {
+        "start": 46,
+        "end": 62,
+        "value": "Theodora Estrada",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "5 mln",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 2,
+        "end": 5,
+        "extractor": "DIETClassifier",
+        "value": "mln"
+      }
+    ]
+  },
+  {
+    "text": "ACME brands",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 0,
+        "end": 4,
+        "extractor": "DIETClassifier",
+        "value": "ACME"
+      },
+      {
+        "entity": "job_function",
+        "start": 5,
+        "end": 11,
+        "extractor": "DIETClassifier",
+        "value": "brands"
+      }
+    ]
+  },
+  {
+    "text": "I am Christina Sullivan",
+    "entities": [
+      {
+        "start": 5,
+        "end": 23,
+        "value": "Christina Sullivan",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 5,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "Christina"
+      },
+      {
+        "entity": "job_function",
+        "start": 15,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "Sullivan"
+      }
+    ]
+  },
+  {
+    "text": "I am Hattie Rice",
+    "entities": [
+      {
+        "start": 5,
+        "end": 16,
+        "value": "Hattie Rice",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I spend money",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "entity",
+        "start": 8,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "money"
+      }
+    ]
+  },
+  {
+    "text": "I want a bot that sales my product that Catherine Rodriguez finally can focus on important stuff",
+    "entities": [
+      {
+        "start": 40,
+        "end": 59,
+        "value": "Catherine Rodriguez",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I work for the AI research group of the turing centre of the UBC, Vancouver, Canada",
+    "entities": [
+      {
+        "start": 61,
+        "end": 64,
+        "value": "UBC",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 18,
+        "end": 26,
+        "extractor": "DIETClassifier",
+        "value": "research"
+      },
+      {
+        "entity": "company",
+        "start": 27,
+        "end": 32,
+        "extractor": "DIETClassifier",
+        "value": "group"
+      },
+      {
+        "entity": "company",
+        "start": 47,
+        "end": 53,
+        "extractor": "DIETClassifier",
+        "value": "centre"
+      }
+    ]
+  },
+  {
+    "text": "I'm Jeanine Hwang",
+    "entities": [
+      {
+        "start": 4,
+        "end": 17,
+        "value": "Jeanine Hwang",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 4,
+        "end": 11,
+        "extractor": "DIETClassifier",
+        "value": "Jeanine"
+      }
+    ]
+  },
+  {
+    "text": "I'm a bot developer",
+    "entities": [
+      {
+        "start": 6,
+        "end": 19,
+        "value": "bot developer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 10,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "developer"
+      }
+    ]
+  },
+  {
+    "text": "I'm a business woman",
+    "entities": [
+      {
+        "start": 6,
+        "end": 20,
+        "value": "business woman",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm a conversation designer",
+    "entities": [
+      {
+        "start": 6,
+        "end": 27,
+        "value": "conversation designer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 19,
+        "end": 27,
+        "extractor": "DIETClassifier",
+        "value": "designer"
+      }
+    ]
+  },
+  {
+    "text": "I'm a student",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "student",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "My name si tom Harbin",
+    "entities": [
+      {
+        "start": 11,
+        "end": 21,
+        "value": "tom Harbin",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "SCALABLE MINDS",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 0,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "SCALABLE MINDS"
+      }
+    ]
+  },
+  {
+    "text": "1 million big ones",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 14,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "ones"
+      }
+    ]
+  },
+  {
+    "text": "Al Capone",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Al Capone",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "BBC",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "BBC",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "BCBSM",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "BCBSM",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "BCG brazil",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "BCG brazil",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "BCG digital ventures",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "BCG digital ventures",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "COO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "COO",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "CSI",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "CSI",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "CTO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "CTO",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Denise Armstrong's company",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Denise Armstrong's company",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 0,
+        "end": 6,
+        "extractor": "DIETClassifier",
+        "value": "Denise"
+      },
+      {
+        "entity": "name",
+        "start": 7,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "Armstrong"
+      }
+    ]
+  },
+  {
+    "text": "Helvetia",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Helvetia",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 8,
+        "extractor": "DIETClassifier",
+        "value": "Helvetia"
+      }
+    ]
+  },
+  {
+    "text": "I am a freelancer ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "I am a freelancer ",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 7,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "freelancer"
+      }
+    ]
+  },
+  {
+    "text": "IBM",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "IBM",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Jamie Moore",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "Jamie Moore",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 5,
+        "extractor": "DIETClassifier",
+        "value": "Jamie"
+      }
+    ]
+  },
+  {
+    "text": "Michele Perry",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Michele Perry",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "Michele"
+      }
+    ]
+  },
+  {
+    "text": "Michelle Garcia",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Michelle Garcia",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 8,
+        "extractor": "DIETClassifier",
+        "value": "Michelle"
+      }
+    ]
+  },
+  {
+    "text": "Mr. Sweney",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Mr. Sweney",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 2,
+        "extractor": "DIETClassifier",
+        "value": "Mr"
+      },
+      {
+        "entity": "entity",
+        "start": 4,
+        "end": 10,
+        "extractor": "DIETClassifier",
+        "value": "Sweney"
+      }
+    ]
+  },
+  {
+    "text": "SAP",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "SAP",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "William Zelkind",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "William Zelkind",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Zendesk",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Zendesk",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "arabic",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "arabic",
+        "entity": "language"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 6,
+        "extractor": "DIETClassifier",
+        "value": "arabic"
+      }
+    ]
+  },
+  {
+    "text": "assistant to the CEO",
+    "entities": [
+      {
+        "start": 0,
+        "end": 20,
+        "value": "assistant to the CEO",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 17,
+        "end": 20,
+        "extractor": "DIETClassifier",
+        "value": "CEO"
+      }
+    ]
+  },
+  {
+    "text": "botium",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "botium",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "distances",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "distances",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 9,
+        "extractor": "DIETClassifier",
+        "value": "distances"
+      }
+    ]
+  },
+  {
+    "text": "google enginer",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "google enginer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 7,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "enginer"
+      }
+    ]
+  },
+  {
+    "text": "how long",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "how long",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "intel",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "intel",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 0,
+        "end": 5,
+        "extractor": "DIETClassifier",
+        "value": "intel"
+      }
+    ]
+  },
+  {
+    "text": "no job",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "no job",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "reddit",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "reddit",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "saler",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "saler",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "susi ai",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "susi ai",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 5,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "ai"
+      }
+    ]
+  },
+  {
+    "text": "t-mobile US",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "t-mobile US",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "wurst co kg",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "wurst co kg",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "xyz",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "xyz",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "faq",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 3,
+        "extractor": "DIETClassifier",
+        "value": "faq"
+      }
+    ]
+  },
+  {
+    "text": "get dates from messages",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "dates",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i am interested in ordinals",
+    "entities": [
+      {
+        "start": 19,
+        "end": 27,
+        "value": "ordinals",
+        "entity": "entity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm a race car driver",
+    "entities": [
+      {
+        "start": 6,
+        "end": 21,
+        "value": "race car driver",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm in customer success",
+    "entities": [
+      {
+        "start": 7,
+        "end": 23,
+        "value": "customer success",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm in sales",
+    "entities": [
+      {
+        "start": 7,
+        "end": 12,
+        "value": "sales",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "im a freelancer",
+    "entities": [
+      {
+        "start": 5,
+        "end": 15,
+        "value": "freelancer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 5,
+        "end": 15,
+        "extractor": "DIETClassifier",
+        "value": "freelancer"
+      }
+    ]
+  },
+  {
+    "text": "it's Katie Betz",
+    "entities": [
+      {
+        "start": 5,
+        "end": 15,
+        "value": "Katie Betz",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's the moabit yoga studio",
+    "entities": [
+      {
+        "start": 9,
+        "end": 27,
+        "value": "moabit yoga studio",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "mi name is Kathy Wright",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "value": "Kathy Wright",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my job function is developer",
+    "entities": [
+      {
+        "start": 19,
+        "end": 28,
+        "value": "developer",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 3,
+        "end": 6,
+        "extractor": "DIETClassifier",
+        "value": "job"
+      },
+      {
+        "entity": "job_function",
+        "start": 19,
+        "end": 28,
+        "extractor": "DIETClassifier",
+        "value": "developer"
+      }
+    ]
+  },
+  {
+    "text": "my name is Alexander Kohn",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "Alexander Kohn",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 11,
+        "end": 20,
+        "extractor": "DIETClassifier",
+        "value": "Alexander"
+      },
+      {
+        "entity": "name",
+        "start": 21,
+        "end": 25,
+        "extractor": "DIETClassifier",
+        "value": "Kohn"
+      }
+    ]
+  },
+  {
+    "text": "my name is Brian Leung",
+    "entities": [
+      {
+        "start": 11,
+        "end": 22,
+        "value": "Brian Leung",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my name is Claude Ake",
+    "entities": [
+      {
+        "start": 11,
+        "end": 21,
+        "value": "Claude Ake",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my name is Earl Ring",
+    "entities": [
+      {
+        "start": 11,
+        "end": 20,
+        "value": "Earl Ring",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my name is Felicia Cosby",
+    "entities": [
+      {
+        "start": 11,
+        "end": 24,
+        "value": "Felicia Cosby",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my name is Greg King",
+    "entities": [
+      {
+        "start": 11,
+        "end": 20,
+        "value": "Greg King",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 16,
+        "end": 20,
+        "extractor": "DIETClassifier",
+        "value": "King"
+      }
+    ]
+  },
+  {
+    "text": "my name is james culpit",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "value": "james culpit",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 11,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "james"
+      }
+    ]
+  },
+  {
+    "text": "my name is John Evers",
+    "entities": [
+      {
+        "start": 11,
+        "end": 21,
+        "value": "John Evers",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 11,
+        "end": 15,
+        "extractor": "DIETClassifier",
+        "value": "John"
+      }
+    ]
+  },
+  {
+    "text": "my name is Joseph Parson",
+    "entities": [
+      {
+        "start": 11,
+        "end": 24,
+        "value": "Joseph Parson",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 18,
+        "end": 24,
+        "extractor": "DIETClassifier",
+        "value": "Parson"
+      }
+    ]
+  },
+  {
+    "text": "my name is Monica Ser",
+    "entities": [
+      {
+        "start": 11,
+        "end": 21,
+        "value": "Monica Ser",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my name is Staci Simpson",
+    "entities": [
+      {
+        "start": 11,
+        "end": 24,
+        "value": "Staci Simpson",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "my name's Michael Peppers",
+    "entities": [
+      {
+        "start": 10,
+        "end": 25,
+        "value": "Michael Peppers",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 10,
+        "end": 17,
+        "extractor": "DIETClassifier",
+        "value": "Michael"
+      }
+    ]
+  },
+  {
+    "text": "botonic",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "botonic",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "wordpress",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "wordpress",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hi mrs rasa",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 3,
+        "end": 6,
+        "extractor": "DIETClassifier",
+        "value": "mrs"
+      }
+    ]
+  },
+  {
+    "text": "i am Karen Mease",
+    "entities": [
+      {
+        "start": 5,
+        "end": 16,
+        "value": "Karen Mease",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "jojojo",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 6,
+        "extractor": "DIETClassifier",
+        "value": "jojojo"
+      }
+    ]
+  },
+  {
+    "text": "You're foolish.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 7,
+        "end": 14,
+        "extractor": "DIETClassifier",
+        "value": "foolish"
+      }
+    ]
+  },
+  {
+    "text": "thta was a terrible fucking joke",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 11,
+        "end": 19,
+        "extractor": "DIETClassifier",
+        "value": "terrible"
+      }
+    ]
+  },
+  {
+    "text": "where to start the development of rasa",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 19,
+        "end": 33,
+        "extractor": "DIETClassifier",
+        "value": "development of"
+      }
+    ]
+  },
+  {
+    "text": "i want to speak to a manager",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "manager",
+        "entity": "job_function"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 16,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "to"
+      },
+      {
+        "entity": "job_function",
+        "start": 21,
+        "end": 28,
+        "extractor": "DIETClassifier",
+        "value": "manager"
+      }
+    ]
+  },
+  {
+    "text": "how to install rasa_nlu",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 15,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "rasa_nlu"
+      }
+    ]
+  },
+  {
+    "text": "kalhmera sara ti kaneis",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 8,
+        "extractor": "DIETClassifier",
+        "value": "kalhmera"
+      },
+      {
+        "entity": "name",
+        "start": 17,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "kaneis"
+      }
+    ]
+  },
+  {
+    "text": "Can you please send me an uber",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 26,
+        "end": 30,
+        "extractor": "DIETClassifier",
+        "value": "uber"
+      }
+    ]
+  },
+  {
+    "text": "Find nearest pizzahut",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "value": "pizzahut",
+        "entity": "company"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am User",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 0,
+        "end": 1,
+        "extractor": "DIETClassifier",
+        "value": "I"
+      }
+    ]
+  },
+  {
+    "text": "I am trying to build one, and did some research before, but I have not do hand-on work yet",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 39,
+        "end": 47,
+        "extractor": "DIETClassifier",
+        "value": "research"
+      },
+      {
+        "entity": "product",
+        "start": 48,
+        "end": 54,
+        "extractor": "DIETClassifier",
+        "value": "before"
+      }
+    ]
+  },
+  {
+    "text": "I want french cuisine",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 7,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "french"
+      }
+    ]
+  },
+  {
+    "text": "Kristin, I want to marry you",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Kristin",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "are you dev?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 8,
+        "end": 11,
+        "extractor": "DIETClassifier",
+        "value": "dev"
+      }
+    ]
+  },
+  {
+    "text": "example of a chatbot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 0,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "example"
+      }
+    ]
+  },
+  {
+    "text": "get me a club mate",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 9,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "club mate"
+      }
+    ]
+  },
+  {
+    "text": "help with Alma Abrams",
+    "entities": [
+      {
+        "start": 10,
+        "end": 21,
+        "value": "Alma Abrams",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "how are Alicia Jackson's cats doing?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 22,
+        "value": "Alicia Jackson",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i wanna party",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 8,
+        "end": 13,
+        "extractor": "DIETClassifier",
+        "value": "party"
+      }
+    ]
+  },
+  {
+    "text": "i want to find new friends",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_type",
+        "start": 15,
+        "end": 18,
+        "extractor": "DIETClassifier",
+        "value": "new"
+      }
+    ]
+  },
+  {
+    "text": "is John Lewis still married to you",
+    "entities": [
+      {
+        "start": 3,
+        "end": 13,
+        "value": "John Lewis",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 3,
+        "end": 7,
+        "extractor": "DIETClassifier",
+        "value": "John"
+      }
+    ]
+  },
+  {
+    "text": "please hurry, i have deadline in two weeks to deliver the bot it is for very big company",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 21,
+        "end": 29,
+        "extractor": "DIETClassifier",
+        "value": "deadline"
+      }
+    ]
+  },
+  {
+    "text": "what is the capital of delhi",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "location",
+        "start": 23,
+        "end": 28,
+        "extractor": "DIETClassifier",
+        "value": "delhi"
+      }
+    ]
+  },
+  {
+    "text": "wheres the party?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 11,
+        "end": 16,
+        "extractor": "DIETClassifier",
+        "value": "party"
+      }
+    ]
+  },
+  {
+    "text": "who are the engineers at rasa?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "job_function",
+        "start": 12,
+        "end": 21,
+        "extractor": "DIETClassifier",
+        "value": "engineers"
+      }
+    ]
+  },
+  {
+    "text": "it's pretty cool",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 5,
+        "end": 11,
+        "extractor": "DIETClassifier",
+        "value": "pretty"
+      }
+    ]
+  },
+  {
+    "text": "bot framework",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "bot framework",
+        "entity": "current_api"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "chatfuel",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "chatfuel",
+        "entity": "current_api"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "wit",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "wit",
+        "entity": "current_api"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i can migrate microsoft luis bot to raza?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 28,
+        "value": "luis",
+        "entity": "current_api"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "company",
+        "start": 14,
+        "end": 23,
+        "extractor": "DIETClassifier",
+        "value": "microsoft"
+      },
+      {
+        "entity": "current_api",
+        "start": 24,
+        "end": 28,
+        "extractor": "DIETClassifier",
+        "value": "luis"
+      }
+    ]
+  },
+  {
+    "text": "what is the difference between you and LUIS",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "current_api",
+        "start": 39,
+        "end": 43,
+        "extractor": "DIETClassifier",
+        "value": "LUIS"
+      }
+    ]
+  },
+  {
+    "text": "What is the difference between entities and slots?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 31,
+        "end": 39,
+        "extractor": "DIETClassifier",
+        "value": "entities"
+      }
+    ]
+  },
+  {
+    "text": "can i user rasa for my text classification problem?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nlu_part",
+        "start": 28,
+        "end": 42,
+        "extractor": "DIETClassifier",
+        "value": "classification"
+      }
+    ]
+  },
+  {
+    "text": "rasa-core error",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "product",
+        "start": 5,
+        "end": 9,
+        "extractor": "DIETClassifier",
+        "value": "core"
+      }
+    ]
+  }
+]

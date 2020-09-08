@@ -1,0 +1,80 @@
+{
+  "location": {
+    "precision": 0.8918918918918919,
+    "recall": 0.717391304347826,
+    "f1-score": 0.7951807228915664,
+    "support": 46
+  },
+  "product": {
+    "precision": 0.9348837209302325,
+    "recall": 0.9617224880382775,
+    "f1-score": 0.9481132075471698,
+    "support": 418
+  },
+  "job_function": {
+    "precision": 0.8702290076335878,
+    "recall": 0.6440677966101694,
+    "f1-score": 0.7402597402597403,
+    "support": 177
+  },
+  "entity": {
+    "precision": 0.25,
+    "recall": 0.05,
+    "f1-score": 0.08333333333333334,
+    "support": 20
+  },
+  "current_api": {
+    "precision": 0.9625,
+    "recall": 0.8461538461538461,
+    "f1-score": 0.9005847953216374,
+    "support": 91
+  },
+  "language": {
+    "precision": 0.9724137931034482,
+    "recall": 0.9724137931034482,
+    "f1-score": 0.9724137931034482,
+    "support": 290
+  },
+  "company": {
+    "precision": 0.6415094339622641,
+    "recall": 0.2518518518518518,
+    "f1-score": 0.3617021276595744,
+    "support": 135
+  },
+  "name": {
+    "precision": 0.9078947368421053,
+    "recall": 0.8922413793103449,
+    "f1-score": 0.9,
+    "support": 232
+  },
+  "user_type": {
+    "precision": 1.0,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.9411764705882353,
+    "support": 18
+  },
+  "nlu_part": {
+    "precision": 0.9754098360655737,
+    "recall": 0.9224806201550387,
+    "f1-score": 0.9482071713147411,
+    "support": 129
+  },
+  "micro avg": {
+    "precision": 0.9237958303378864,
+    "recall": 0.8258354755784062,
+    "f1-score": 0.8720732948761452,
+    "support": 1556
+  },
+  "macro avg": {
+    "precision": 0.8406732420429103,
+    "recall": 0.7147211968459691,
+    "f1-score": 0.7590971362019446,
+    "support": 1556
+  },
+  "weighted avg": {
+    "precision": 0.9007003072697572,
+    "recall": 0.8258354755784062,
+    "f1-score": 0.8524583418244673,
+    "support": 1556
+  }
+}
