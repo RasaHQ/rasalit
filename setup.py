@@ -8,6 +8,7 @@ base_packages = [
     "altair>=4.1.0",
     "typer>=0.3.0",
     "rasa>=1.10.12",
+    "spacy>=2.3.2",
 ]
 
 dev_packages = ["flake8>=3.6.0", "pytest>=4.0.2", "pre-commit>=2.7.1", "black>="]
