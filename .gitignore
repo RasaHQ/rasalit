@@ -136,3 +136,4 @@ rasalit/apps/*/frontend/node_modules/
 .DS_Store
 **/.DS_Store
 example.csv
+tests/demo/models
