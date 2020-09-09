@@ -59,6 +59,8 @@ The app contains a collection of viewers that each specialize in a seperate task
 
 ### `overview`
 
+This command shows an summary of the intent/entity scores from a `rasa train nlu` run.
+
 ![](docs/overview.gif)
 
 Example Usage:
@@ -92,6 +94,8 @@ folder where you ran the `rasa test` command. You'll get some simple charts
 
 ### `live-nlu`
 
+This command gives you an interactive gui that lets you see the output of a trained modelling pipeline.
+
 ![](docs/nlu-playground.gif)
 
 Example Usage:
@@ -106,6 +110,8 @@ well as the detected entities. We also show some shapes of internal featurizatio
 steps.
 
 ### `diet-explorer`
+
+This command gives you an interactive visualisation of DIET that allows you to see the available hyperparameters from all the layers in the algorithm.
 
 ![](docs/diet-gif.gif)
 
