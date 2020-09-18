@@ -21,7 +21,7 @@ There are many ways you can contribute to this project.
 Feel free to start the discussion by opening an issue on this repository.
 Before submitting code to the repository it would help if you first create
 an issue so that we can disucss the changes you would like
-to contribute. You can ping the maintainer (alias: **koaning**) both in
+to contribute. You can ping the maintainer (Github alias: **koaning**) both in
 the issues here as well as on the [Rasa forum](https://forum.rasa.com)
 if you have any questions.
 
