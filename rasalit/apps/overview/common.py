@@ -11,15 +11,21 @@ def read_reports(folder, report="intent"):
         "response": "response_selection_report.json",
     }
     paths = list(pathlib.Path(folder).glob(f"*/{files[report]}"))
-    dicts = [json.loads(p.read_text())["weighted avg"] for p in paths]
-    data = [{"config": p.parts[-2], **d} for p, d in zip(paths, dicts)]
-    return pd.DataFrame(data).drop(columns=["support"]).melt("config")
+    if paths:
+        dicts = [json.loads(p.read_text())["weighted avg"] for p in paths]
+        data = [{"config": p.parts[-2], **d} for p, d in zip(paths, dicts)]
+        return pd.DataFrame(data).drop(columns=["support"]).melt("config")
+    else:
+        return pd.DataFrame()
 
 
 def remove(dataf, configs, metrics):
-    return dataf.loc[lambda d: d["config"].isin(configs)].loc[
-        lambda d: d["variable"].isin(metrics)
-    ]
+    if dataf.empty:
+        return dataf
+    else:
+        return dataf.loc[lambda d: d["config"].isin(configs)].loc[
+            lambda d: d["variable"].isin(metrics)
+        ]
 
 
 def mk_viewable(dataf):
