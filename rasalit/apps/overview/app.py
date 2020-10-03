@@ -14,7 +14,7 @@ parser.add_argument("--folder", help="Pass the extra folder.")
 args = parser.parse_args()
 
 root_folder = args.folder
-all_conf_folders = list(read_reports(args.folder, report="intent")["config"].unique())
+all_conf_folders = list(read_reports(root_folder, report="intent")["config"].unique())
 
 df_intent = read_reports(root_folder, report="intent")
 df_entity = read_reports(root_folder, report="entity")
