@@ -7,11 +7,11 @@ base_packages = [
     "pandas>=1.0.3",
     "altair>=4.1.0",
     "typer>=0.3.0",
-    "rasa>=1.10.12",
+    "rasa>=2.0",
     "spacy>=2.3.2",
 ]
 
-dev_packages = ["flake8>=3.6.0", "pytest>=4.0.2", "pre-commit>=2.7.1", "black>="]
+dev_packages = ["flake8>=3.6.0", "pytest>=4.0.2", "pre-commit>=2.7.1", "black"]
 
 setup(
     name="rasalit",
