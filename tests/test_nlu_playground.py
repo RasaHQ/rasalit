@@ -6,7 +6,8 @@ a model file that we can use in these tests.
 
 import pathlib
 
-from rasa.nlu.training_data import Message
+from rasa.shared.nlu.training_data.message import Message
+from rasa.shared.nlu.constants import TEXT
 
 from rasalit.apps.livenlu.common import _mk_spacy_doc, load_interpreter
 
@@ -15,7 +16,7 @@ def test_load_interpreter_can_load():
     model_folder = "tests/demo/models"
     model_path = list(pathlib.Path(model_folder).glob("*"))[0]
     interpreter = load_interpreter(model_folder, str(model_path.parts[-1]))
-    msg = Message("hello world")
+    msg = Message({TEXT: "hello world"})
     for i, element in enumerate(interpreter.pipeline):
         element.process(msg)
 
