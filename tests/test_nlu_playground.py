@@ -37,6 +37,17 @@ def test_load_interpreter_can_load():
     assert [i["name"] in all_intents for i in nlu_dict["intent_ranking"]]
 
 
+def test_can_pick_up_entities():
+    model_folder = "tests/demo/models"
+    model_path = list(pathlib.Path(model_folder).glob("*"))[0]
+    interpreter = load_interpreter(model_folder, str(model_path.parts[-1]))
+    blob, nlu_dict, tokens = fetch_info_from_message(
+        interpreter=interpreter, text_input="hello python"
+    )
+    assert nlu_dict["entities"][0]["entity"] == "proglang"
+    assert nlu_dict["entities"][0]["value"] == "python"
+
+
 def test_create_spacy_doc():
     tokens = ["Hello", "python", "and", "golang"]
     entities = [

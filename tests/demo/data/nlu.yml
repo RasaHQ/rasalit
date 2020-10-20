@@ -90,3 +90,11 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: talk_code
+  examples: |
+    - do you like to write [python](proglang)
+    - i like to write [python](proglang)
+    - can you debug [python](proglang) code?
+    - [python](proglang) is a great tool!
+    - hello world, hello [python](proglang)
