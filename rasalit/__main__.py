@@ -41,6 +41,22 @@ def live_nlu(
 
 
 @app.command()
+def attention(
+    port: int = typer.Option(8501, help="Port number"),
+    folder: str = typer.Option("", help="Folder that contains trained Rasa models."),
+):
+    """Gives advanced deep-dive into the attention mechanisms in DIET/TED."""
+    if folder == "":
+        typer.echo(
+            "You need to set the `folder` option manually. Example;\n> rasalit attention --folder path/folder"
+        )
+        return
+    if not pathlib.Path(folder).exists():
+        raise ValueError(f"You need to pass a folder that exists, got: {folder}")
+    run_streamlit_app("attention", port=port, folder=folder)
+
+
+@app.command()
 def diet_explorer(
     port: int = typer.Option(8501, help=("Port number")),
 ):
