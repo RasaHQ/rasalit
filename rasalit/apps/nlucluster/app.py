@@ -135,5 +135,5 @@ p = (
 st.write(p)
 
 st.markdown(
-    "While the tool helps you in discovering clusters, it doesn't do labelling (yet). We do offer a [jupyter notebook]() that might help out though."
+    "While the tool helps you in discovering clusters, it doesn't do labelling (yet). We do offer a [jupyter notebook](https://github.com/RasaHQ/rasalit/tree/master/notebooks/bulk-labelling) that might help out though."
 )
