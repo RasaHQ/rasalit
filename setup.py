@@ -9,6 +9,7 @@ base_packages = [
     "typer>=0.3.0",
     "rasa>=2.0",
     "spacy>=2.3.2",
+    "tensorflow>=2.3.1",
 ]
 
 dev_packages = ["flake8>=3.6.0", "pytest>=4.0.2", "pre-commit>=2.7.1", "black"]
@@ -23,6 +24,6 @@ setup(
             "rasalit = rasalit.__main__:main",
         ],
     },
-    package_data={"rasalit": ["html/*/*.html"]},
+    package_data={"rasalit": ["html/*/*.html", "data/*.*"]},
     extras_require={"dev": dev_packages},
 )

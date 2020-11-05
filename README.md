@@ -33,9 +33,9 @@ You can install via pip by linking to this github repository.
 python -m pip install git+https://github.com/RasaHQ/rasalit
 ```
 
-### Compatibility 
+### Compatibility
 
-The focus is to support the most recent version of Rasa. We do tag a release every time that we upgrade though. That means you can find compatible versions of rasalit for [Rasa 1.10](https://github.com/RasaHQ/rasalit/tree/r1.10). 
+The focus is to support the most recent version of Rasa. We do tag a release every time that we upgrade though. That means you can find compatible versions of rasalit for [Rasa 1.10](https://github.com/RasaHQ/rasalit/tree/r1.10).
 
 ## Usage
 
@@ -53,6 +53,7 @@ Options:
 Commands:
   diet-explorer  Allows you to explore the DIET settings.
   live-nlu       Select a trained Rasa model and interact with it.
+  nlu-cluster    Cluster a text file to look for clusters of intents.
   overview       Gives an overview of all `rasa train nlu` results.
   version        Prints the current version of rasalit.
 ```
@@ -60,6 +61,23 @@ Commands:
 ## Features
 
 The app contains a collection of viewers that each specialize in a seperate task.
+
+### `nlu-cluster`
+
+This command allows you to cluster similar utterances in a text file.
+
+![](docs/cluster.gif)
+
+Example Usage:
+
+```
+python -m rasalit nlu-cluster --port 8501
+```
+
+This will start a server locally. Internally it is using the [whatlies]() package to
+handle the embeddings. This means that while the demo is only in English, you can extend
+the code to work for Non-English scenarios too! For more details, as well as a labelling tool,
+check out the notebook found [here]().
 
 ### `overview`
 
