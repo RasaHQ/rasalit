@@ -9,7 +9,10 @@ from rasalit.apps.livenlu.common import (
     create_altair_chart,
     create_displacy_chart,
     fetch_info_from_message,
+    attention_to_plot_df,
+    plot_attention_weights,
 )
+from rasa.shared.nlu.training_data.message import Message
 
 parser = argparse.ArgumentParser(description="")
 parser.add_argument("--folder", help="Pass the model folder.")
@@ -43,3 +46,11 @@ st.markdown("## Intents")
 chart_data = pd.DataFrame(blob["intent_ranking"]).sort_values("name")
 p = create_altair_chart(chart_data)
 st.altair_chart(p.properties(width=600))
+
+st.beta_expander("Show DIET Attention Weights")
+diet_clf = [e for e in interpreter.pipeline if type(e).__name__ == "DIETClassifier"][0]
+diagnostics = diet_clf.process_with_diagnostics(Message({"TEXT": text_input}))
+diet_dataf = attention_to_plot_df(
+    diagnostics["attention_weights"].numpy(), tokens=tokens
+)
+st.altair_chart(plot_attention_weights(diet_dataf, tokens=tokens))

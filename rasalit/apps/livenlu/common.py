@@ -57,3 +57,51 @@ def _mk_spacy_doc(tokens, entities):
 def create_displacy_chart(tokens, entities):
     doc = _mk_spacy_doc(tokens, entities)
     return displacy.render(doc, style="ent")
+
+
+def matrix_to_plot_df(np_mat, tokens, layer, head):
+    data = []
+    for i in range(np_mat.shape[0]):
+        for j in range(np_mat.shape[1]):
+            data.append(
+                {
+                    "w1": tokens[j],
+                    "w2": tokens[i],
+                    "attention": np_mat[i, j],
+                    "layer": layer,
+                    "head": head,
+                }
+            )
+    return pd.DataFrame(data)
+
+
+def attention_to_plot_df(attention_weights, tokens):
+    num_layers, _, num_heads, _, _ = attention_weights.shape
+    dataframes = []
+    for layer in range(num_layers):
+        for head in range(num_heads):
+            sub_df = matrix_to_plot_df(
+                attention_weights[layer][0][head], tokens, layer=layer, head=head
+            )
+            dataframes.append(sub_df)
+    return pd.concat(dataframes)
+
+
+def plot_attention_weights(plot_df, tokens, title="DIET attention"):
+    return (
+        alt.Chart(plot_df)
+        .mark_rect()
+        .encode(
+            x=alt.X("w1:N", sort=tokens),
+            y=alt.Y("w2:N", sort=tokens),
+            column="head:Q",
+            row="layer:Q",
+            color=alt.Color("attention:Q", scale=alt.Scale(range=["white", color])),
+            tooltip=[
+                alt.Tooltip("w1", title="from"),
+                alt.Tooltip("w2", title="to"),
+                alt.Tooltip("attention", title="attention"),
+            ],
+        )
+        .properties(title=title)
+    )

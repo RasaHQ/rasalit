@@ -57,6 +57,14 @@ def attention(
 
 
 @app.command()
+def cluster_text(
+    port: int = typer.Option(8501, help="Port number"),
+):
+    """Clusters texts to help you find NLU intents."""
+    run_streamlit_app("attention", port=port)
+
+
+@app.command()
 def diet_explorer(
     port: int = typer.Option(8501, help=("Port number")),
 ):
