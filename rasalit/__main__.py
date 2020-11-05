@@ -25,6 +25,14 @@ def overview(
 
 
 @app.command()
+def nlu_cluster(
+    port: int = typer.Option(8501, help="Port number"),
+):
+    """Cluster a text file to look for clusters of intents."""
+    run_streamlit_app("nlucluster", port=port)
+
+
+@app.command()
 def live_nlu(
     port: int = typer.Option(8501, help="Port number"),
     folder: str = typer.Option("", help="Folder that contains all Rasa NLU models"),
