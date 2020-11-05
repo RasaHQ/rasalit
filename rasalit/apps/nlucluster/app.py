@@ -12,7 +12,7 @@ import sentencepiece as spm
 import tensorflow as tf
 import tensorflow_hub as hub
 
-import tensorflow.compat.v1 as tf
+import tensorflow.compat.v1 as tf  # noqa: F811
 
 tf.disable_v2_behavior()
 
