@@ -60,4 +60,4 @@ if "entity" in items:
     st.markdown("## Entity Summary")
     st.altair_chart(create_altair_chart(df_entity_subset))
     if show_raw_data:
-        st.write(df_intent_subset.pipe(mk_viewable))
+        st.write(df_entity_subset.pipe(mk_viewable))
