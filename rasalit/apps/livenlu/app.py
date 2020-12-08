@@ -34,7 +34,7 @@ blob, nlu_dict, tokens = fetch_info_from_message(
 
 st.markdown("## Tokens and Entities")
 st.write(
-    create_displacy_chart(tokens=tokens, entities=nlu_dict["entities"]),
+    create_displacy_chart(tokens=tokens, entities=blob["entities"]),
     unsafe_allow_html=True,
 )
 
