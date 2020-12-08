@@ -22,8 +22,8 @@ def test_load_interpreter_can_load():
         interpreter=interpreter, text_input="hello world"
     )
 
-    assert nlu_dict["text"] == "hello world"
-    assert [t.text for t in nlu_dict["text_tokens"]] == ["hello", "world"]
+    assert blob["text"] == "hello world"
+    assert tokens == ["hello", "world"]
     all_intents = [
         "talk_code",
         "bot_challenge",
@@ -34,7 +34,7 @@ def test_load_interpreter_can_load():
         "goodbye",
         "greet",
     ]
-    assert [i["name"] in all_intents for i in nlu_dict["intent_ranking"]]
+    assert [i["name"] in all_intents for i in blob["intent_ranking"]]
 
 
 def test_can_pick_up_entities():
@@ -44,8 +44,8 @@ def test_can_pick_up_entities():
     blob, nlu_dict, tokens = fetch_info_from_message(
         interpreter=interpreter, text_input="hello python"
     )
-    assert nlu_dict["entities"][0]["entity"] == "proglang"
-    assert nlu_dict["entities"][0]["value"] == "python"
+    assert blob["entities"][0]["entity"] == "proglang"
+    assert blob["entities"][0]["value"] == "python"
 
 
 def test_create_spacy_doc():
@@ -66,7 +66,7 @@ def test_create_spacy_doc():
             "extractor": "DIETClassifier",
         },
     ]
-    doc = _mk_spacy_doc(tokens=tokens, entities=entities)
+    doc, warn = _mk_spacy_doc(tokens=tokens, entities=entities)
     for ent in doc.ents:
         assert ent.text in ["python", "golang"]
         assert ent.label_ == "proglang"
