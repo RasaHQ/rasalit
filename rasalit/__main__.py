@@ -49,6 +49,22 @@ def live_nlu(
 
 
 @app.command()
+def spelling(
+    port: int = typer.Option(8501, help="Port number"),
+    folder: str = typer.Option("", help="Folder that contains all Rasa NLU models"),
+):
+    """Check the effect of spelling on NLU predictions."""
+    if folder == "":
+        typer.echo(
+            "You need to set the `folder` option manually. Example;\n> rasalit live-nlu --folder path/folder"
+        )
+        return
+    if not pathlib.Path(folder).exists():
+        raise ValueError(f"You need to pass a folder that exists, got: {folder}")
+    run_streamlit_app("spelling", port=port, folder=folder)
+
+
+@app.command()
 def diet_explorer(
     port: int = typer.Option(8501, help=("Port number")),
 ):
