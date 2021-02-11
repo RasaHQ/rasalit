@@ -114,6 +114,20 @@ you can run the `rasalit overview --folder gridresults` command from the same
 folder where you ran the `rasa test` command. You'll get some simple charts
  that summarise the intent/entity performance.
 
+### `spelling`
+
+This command let's you predict text with augmented spelling errors to check for robustness.
+
+![](docs/spelling.jpg)
+
+```
+> python -m rasalit spelling --folder models --port 8501
+```
+
+This will start a server locally on port 8501 that will displace an interactive
+playground for your trained Rasa NLU model. You can see the confidence levels change
+as you allow for more or less spelling errors.
+
 ### `live-nlu`
 
 This command gives you an interactive gui that lets you see the output of a trained modelling pipeline.
@@ -126,7 +140,7 @@ Example Usage:
 > python -m rasalit live-nlu --folder models --port 8501
 ```
 
-This will start a server locally on port that will displace an interactive
+This will start a server locally on port 8501 that will displace an interactive
 playground for your trained Rasa NLU model. You can see the confidence levels as
 well as the detected entities. We also show some shapes of internal featurization
 steps.
