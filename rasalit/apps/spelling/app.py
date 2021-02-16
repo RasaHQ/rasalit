@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import pathlib
+from functools import reduce
 
 import nlpaug.augmenter.char as nac
 from rasalit.apps.spelling.classifier import RasaClassifier
@@ -26,7 +27,9 @@ model_file = st.sidebar.selectbox("What model do you want to use", model_files)
 
 text_input = st.text_input("Text Input for Model", "Hello")
 
-
+n_generate = st.sidebar.slider(
+    "Number of samples to generate.", min_value=1, max_value=1000, value=500, step=1
+)
 min_char, max_char = st.sidebar.slider(
     "Number of characters to change.", min_value=0, max_value=10, value=(1, 2), step=1
 )
@@ -46,27 +49,26 @@ aug = nac.KeyboardAug(
 
 clf = RasaClassifier(pathlib.Path(model_folder) / model_file)
 
-augs = aug.augment(text_input, n=500)
-preds = clf.predict_proba(augs)
+augs = aug.augment(text_input, n=n_generate)
 
-probas = clf.predict_proba(augs)
-source = pd.DataFrame(
-    {clf.class_names_[i]: probas[:, i] for i in range(len(clf.class_names_))}
-).melt()
+data = reduce(
+    lambda a, b: a + b, [clf.fetch_info_from_message(a)["intent_ranking"] for a in augs]
+)
+source = pd.DataFrame(data)[["name", "confidence"]].rename(columns={"name": "intent"})
 
 
 error_bars = (
     alt.Chart(source)
     .mark_errorbar(extent="stdev")
-    .encode(x=alt.X("value:Q", scale=alt.Scale(zero=False)), y=alt.Y("variable:N"))
+    .encode(x=alt.X("confidence:Q", scale=alt.Scale(zero=False)), y=alt.Y("intent:N"))
 )
 
 points = (
     alt.Chart(source)
     .mark_point(filled=True, color="black")
     .encode(
-        x=alt.X("value:Q", aggregate="mean"),
-        y=alt.Y("variable:N"),
+        x=alt.X("confidence:Q", aggregate="mean"),
+        y=alt.Y("intent:N"),
     )
 )
 
@@ -78,9 +80,9 @@ hist = (
     alt.Chart(source)
     .mark_area(opacity=0.3, interpolate="step")
     .encode(
-        alt.X("value:Q", bin=alt.Bin(maxbins=100)),
+        alt.X("confidence:Q", bin=alt.Bin(maxbins=100)),
         alt.Y("count()", stack=None),
-        alt.Color("variable:N"),
+        alt.Color("intent:N"),
     )
 )
 
