@@ -28,6 +28,6 @@ jobs:
         pip install -e ".[dev]"
         pip install bpemb
     - name: Train Rasa Models
-      run: python -m rasa train --config tests/demo/config.yml --data tests/demo/data --domain tests/demo/domain.yml --out tests/demo/models
+      run: cd tests/demo && python -m rasa train
     - name: Run Checking Mechanisms
       run: make check

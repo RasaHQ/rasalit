@@ -8,23 +8,6 @@ Some of these views are made using
 
 Feedback is welcome.
 
-## Contribute
-
-There are many ways you can contribute to this project.
-
-- You can suggest new features.
-- You can help review new features.
-- You can submit new components.
-- You can let us know if there are bugs.
-- You can let us know if the components in this library help you.
-
-Feel free to start the discussion by opening an issue on this repository.
-Before submitting code to the repository it would help if you first create
-an issue so that we can disucss the changes you would like
-to contribute. You can ping the maintainer (Github alias: **koaning**) both in
-the issues here as well as on the [Rasa forum](https://forum.rasa.com)
-if you have any questions.
-
 ## Installation
 
 You can install via pip by linking to this github repository.
@@ -35,7 +18,9 @@ python -m pip install git+https://github.com/RasaHQ/rasalit
 
 ### Compatibility
 
-The focus is to support the most recent version of Rasa. We do tag a release every time that we upgrade though. That means you can find compatible versions of rasalit for [Rasa 1.10](https://github.com/RasaHQ/rasalit/tree/r1.10).
+The focus is to support the most recent version of Rasa. We do tag a release every
+time that we upgrade though. That means you can find compatible versions of rasalit for
+Rasa 1.10 [here](https://github.com/RasaHQ/rasalit/tree/r1.10).
 
 ## Usage
 
@@ -55,6 +40,7 @@ Commands:
   live-nlu       Select a trained Rasa model and interact with it.
   nlu-cluster    Cluster a text file to look for clusters of intents.
   overview       Gives an overview of all `rasa train nlu` results.
+  spelling       Check the effect of spelling on NLU predictions.
   version        Prints the current version of rasalit.
 ```
 
@@ -121,12 +107,16 @@ This command let's you predict text with augmented spelling errors to check for 
 ![](docs/spelling.jpg)
 
 ```
+> python -m rasalit spelling --help
 > python -m rasalit spelling --port 8501
 ```
 
 This will start a server locally on port 8501 that will displace an interactive
 playground for your trained Rasa NLU model. You can see the confidence levels change
 as you allow for more or less spelling errors.
+
+It's assumed that you run this command from the root of your Rasa project but you
+can also make it point to other projects via the command line settings.
 
 ### `live-nlu`
 
@@ -137,6 +127,7 @@ This command gives you an interactive gui that lets you see the output of a trai
 Example Usage:
 
 ```
+> python -m rasalit live-nlu --help
 > python -m rasalit live-nlu --port 8501
 ```
 
@@ -144,6 +135,9 @@ This will start a server locally on port 8501 that will displace an interactive
 playground for your trained Rasa NLU model. You can see the confidence levels as
 well as the detected entities. We also show some shapes of internal featurization
 steps.
+
+It's assumed that you run this command from the root of your Rasa project but you
+can also make it point to other projects via the command line settings.
 
 ### `diet-explorer`
 
@@ -173,3 +167,20 @@ and [this video](https://www.youtube.com/watch?v=T0dDetqgra4&ab_channel=Rasa) ca
 ![](docs/bulk.gif)
 
 This notebook allows you to use embeddings and a drawing tool to do some bulk-labelling.
+
+## Contribute
+
+There are many ways you can contribute to this project.
+
+- You can suggest new features.
+- You can help review new features.
+- You can submit new components.
+- You can let us know if there are bugs.
+- You can let us know if the components in this library help you.
+
+Feel free to start the discussion by opening an issue on this repository.
+Before submitting code to the repository it would help if you first create
+an issue so that we can disucss the changes you would like
+to contribute. You can ping the maintainer (Github alias: **koaning**) both in
+the issues here as well as on the [Rasa forum](https://forum.rasa.com)
+if you have any questions.
