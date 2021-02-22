@@ -1,3 +1,4 @@
+import sys
 import argparse
 import streamlit as st
 import pandas as pd
@@ -9,10 +10,12 @@ import nlpaug.augmenter.char as nac
 from rasalit.apps.spelling.classifier import RasaClassifier
 
 parser = argparse.ArgumentParser(description="")
-parser.add_argument("--folder", help="Pass the model folder.")
+parser.add_argument("--model_folder", help="Pass the model folder.")
+parser.add_argument("--project_folder", help="The folder where you're running from.")
 args = parser.parse_args()
 
-model_folder = args.folder
+model_folder = args.model_folder
+sys.path.append(args.project_folder)
 
 
 st.markdown("# Rasa Spelling Playground")

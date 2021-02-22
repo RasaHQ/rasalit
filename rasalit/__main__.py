@@ -1,3 +1,4 @@
+import os
 import typer
 import pathlib
 import subprocess
@@ -6,6 +7,7 @@ from rasalit.common import run_streamlit_app, app_path
 
 
 app = typer.Typer(add_completion=False)
+curr_dir = pathlib.Path(os.getcwd())
 
 
 @app.command()
@@ -35,33 +37,37 @@ def nlu_cluster(
 @app.command()
 def live_nlu(
     port: int = typer.Option(8501, help="Port number"),
-    folder: str = typer.Option("", help="Folder that contains all Rasa NLU models"),
+    model_folder: pathlib.Path = typer.Option(
+        curr_dir / "models", help="Folder that contains all Rasa NLU models"
+    ),
+    project_folder: pathlib.Path = typer.Option(
+        curr_dir, help="The Rasa project folder (for custom component paths"
+    ),
 ):
     """Select a trained Rasa model and interact with it."""
-    if folder == "":
-        typer.echo(
-            "You need to set the `folder` option manually. Example;\n> rasalit live-nlu --folder path/folder"
-        )
-        return
-    if not pathlib.Path(folder).exists():
-        raise ValueError(f"You need to pass a folder that exists, got: {folder}")
-    run_streamlit_app("livenlu", port=port, folder=folder)
+    if not pathlib.Path(model_folder).exists():
+        raise ValueError(f"You need to pass a folder that exists, got: {model_folder}")
+    run_streamlit_app(
+        "livenlu", port=port, model_folder=model_folder, project_folder=project_folder
+    )
 
 
 @app.command()
 def spelling(
     port: int = typer.Option(8501, help="Port number"),
-    folder: str = typer.Option("", help="Folder that contains all Rasa NLU models"),
+    model_folder: pathlib.Path = typer.Option(
+        curr_dir / "models", help="Folder that contains all Rasa NLU models"
+    ),
+    project_folder: pathlib.Path = typer.Option(
+        curr_dir, help="The Rasa project folder (for custom component paths"
+    ),
 ):
     """Check the effect of spelling on NLU predictions."""
-    if folder == "":
-        typer.echo(
-            "You need to set the `folder` option manually. Example;\n> rasalit live-nlu --folder path/folder"
-        )
-        return
-    if not pathlib.Path(folder).exists():
-        raise ValueError(f"You need to pass a folder that exists, got: {folder}")
-    run_streamlit_app("spelling", port=port, folder=folder)
+    if not pathlib.Path(model_folder).exists():
+        raise ValueError(f"You need to pass a folder that exists, got: {model_folder}")
+    run_streamlit_app(
+        "spelling", port=port, model_folder=model_folder, project_folder=project_folder
+    )
 
 
 @app.command()
