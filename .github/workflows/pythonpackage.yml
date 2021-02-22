@@ -30,4 +30,6 @@ jobs:
     - name: Train Rasa Models
       run: cd tests/demo && python -m rasa train
     - name: Run Checking Mechanisms
-      run: make check
+      run: |
+        cp tests/demo/custom.py .
+        make check
