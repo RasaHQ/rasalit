@@ -159,3 +159,14 @@ Example Usage:
 
 This will start a server locally on port 8501 that will display an interactive
 visualisation of the DIET architecture.
+
+## Notebooks
+
+This project also hosts a few jupyter notebooks that contain interactive tools.
+
+### Bulk Labelling
+
+The bulk labelling demo found in [this video]() and [this video]() can be found
+[here]().
+
+![](docs/bulk.gif)
