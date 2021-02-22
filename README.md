@@ -159,3 +159,17 @@ Example Usage:
 
 This will start a server locally on port 8501 that will display an interactive
 visualisation of the DIET architecture.
+
+## Notebooks
+
+This project also hosts a few jupyter notebooks that contain interactive tools.
+
+### Bulk Labelling
+
+The bulk labelling demo found in [this video](https://www.youtube.com/watch?v=YsMoGd7sYMQ)
+and [this video](https://www.youtube.com/watch?v=T0dDetqgra4&ab_channel=Rasa) can be found
+[here](https://github.com/RasaHQ/rasalit/blob/main/notebooks/bulk-labelling/bulk-labelling-ui.ipynb).
+
+![](docs/bulk.gif)
+
+This notebook allows you to use embeddings and a drawing tool to do some bulk-labelling.
