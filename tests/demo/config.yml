@@ -9,14 +9,12 @@ pipeline:
      analyzer: char_wb
      min_ngram: 1
      max_ngram: 4
+   - name: custom.BytePairFeaturizer
+     lang: en
+     vs: 1000
+     dim: 25
    - name: DIETClassifier
      epochs: 50
-   - name: EntitySynonymMapper
-   - name: ResponseSelector
-     epochs: 10
-   - name: FallbackClassifier
-     threshold: 0.3
-     ambiguity_threshold: 0.1
 
 policies:
    - name: MemoizationPolicy

@@ -121,7 +121,7 @@ This command let's you predict text with augmented spelling errors to check for 
 ![](docs/spelling.jpg)
 
 ```
-> python -m rasalit spelling --folder models --port 8501
+> python -m rasalit spelling --port 8501
 ```
 
 This will start a server locally on port 8501 that will displace an interactive
@@ -137,7 +137,7 @@ This command gives you an interactive gui that lets you see the output of a trai
 Example Usage:
 
 ```
-> python -m rasalit live-nlu --folder models --port 8501
+> python -m rasalit live-nlu --port 8501
 ```
 
 This will start a server locally on port 8501 that will displace an interactive
