@@ -29,7 +29,7 @@ jobs:
         pip install bpemb
     - name: Train Rasa Models
       run: cd tests/demo && python -m rasa train
+    - name: Add Custom Model to Main Path for Pytest
+      run: cp tests/demo/custom.py .
     - name: Run Checking Mechanisms
-      run: |
-        cp tests/demo/custom.py .
-        make check
+      run: make check
