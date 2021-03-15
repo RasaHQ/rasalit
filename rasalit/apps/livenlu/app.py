@@ -9,6 +9,8 @@ from rasalit.apps.livenlu.common import (
     create_altair_chart,
     create_displacy_chart,
     fetch_info_from_message,
+    fetch_attention_feats,
+    make_attention_charts,
 )
 
 parser = argparse.ArgumentParser(description="")
@@ -43,3 +45,11 @@ st.markdown("## Intents")
 chart_data = pd.DataFrame(blob["intent_ranking"]).sort_values("name")
 p = create_altair_chart(chart_data)
 st.altair_chart(p.properties(width=600))
+
+if "DIETClassifier" in [type(_).__name__ for _ in interpreter.interpreter.pipeline]:
+    with st.beta_expander("View Diet Attention Charts."):
+        st.markdown(
+            "These charts are meant as an advanced debugging tool for our research team. They display information from the attention mechanism inside of DIET."
+        )
+        diag_data, tokens = fetch_attention_feats(interpreter, text_input)
+        st.altair_chart(make_attention_charts(diag_data, tokens))
