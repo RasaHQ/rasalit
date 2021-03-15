@@ -54,7 +54,7 @@ This command allows you to cluster similar utterances in a text file.
 
 ![](docs/cluster.gif)
 
-Note that this app has some extra dependencies. You can install them via; 
+Note that this app has some extra dependencies. You can install them via;
 
 ```
 python -m pip install "whatlies[umap]"
@@ -144,6 +144,14 @@ steps.
 
 It's assumed that you run this command from the root of your Rasa project but you
 can also make it point to other projects via the command line settings.
+
+#### Attention Charts
+
+If you're using the `DIETClassifier` you'll be able to also use this app to debug
+the internals. The app also allows you to inspect all the pipeline settings as well
+as the internal attention mechanism.
+
+![](docs/attention.png)
 
 ### `diet-explorer`
 
