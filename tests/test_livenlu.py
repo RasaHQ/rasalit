@@ -11,6 +11,8 @@ from rasalit.apps.livenlu.common import (
     _mk_spacy_doc,
     load_interpreter,
     fetch_info_from_message,
+    fetch_attention_feats,
+    make_attention_charts,
 )
 
 
@@ -70,3 +72,13 @@ def test_create_spacy_doc():
     for ent in doc.ents:
         assert ent.text in ["python", "golang"]
         assert ent.label_ == "proglang"
+
+
+def test_smoke_attention_charts():
+    """A smoke test to make sure no errors pop up while making attention charts"""
+    model_folder = "tests/demo/models"
+    model_path = list(pathlib.Path(model_folder).glob("*"))[0]
+    interpreter = load_interpreter(model_folder, str(model_path.parts[-1]))
+    text_input = "hello world this is dog"
+    diag_data, tokens = fetch_attention_feats(interpreter, text_input)
+    _ = make_attention_charts(diag_data, tokens)
