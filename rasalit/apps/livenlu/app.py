@@ -1,4 +1,5 @@
 import json
+import sys
 import pathlib
 import argparse
 
@@ -15,10 +16,12 @@ from rasalit.apps.livenlu.common import (
 )
 
 parser = argparse.ArgumentParser(description="")
-parser.add_argument("--folder", help="Pass the model folder.")
+parser.add_argument("--model_folder", help="Pass the model folder.")
+parser.add_argument("--project_folder", help="The folder where you're running from.")
 args = parser.parse_args()
 
-model_folder = args.folder
+model_folder = args.model_folder
+sys.path.append(args.project_folder)
 
 
 st.markdown("# Rasa NLU Model Playground")

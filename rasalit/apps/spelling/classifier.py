@@ -62,6 +62,9 @@ class RasaClassifier(BaseEstimator, ClassifierMixin):
         """
         Makes a class prediction, scikit-style.
 
+        Note that we do not support `predict_proba` because our API allows for
+        confidence values that do not lie in the [0, 1] range.
+
         Usage:
 
         ```python
@@ -72,23 +75,3 @@ class RasaClassifier(BaseEstimator, ClassifierMixin):
         ```
         """
         return np.array([self.fetch_info_from_message(x)["intent"]["name"] for x in X])
-
-    def predict_proba(self, X):
-        """
-        Makes a class proba prediction, scikit-style.
-
-        Usage:
-
-        ```python
-        from rasa_nlu_examples.scikit import RasaClassifier
-
-        mod = RasaClassifier(model_path="path/to/model.tar.gz")
-        mod.predict_proba(["hello there", "are you a bot?"])
-        ```
-        """
-        result = []
-        for x in X:
-            ranking = self.fetch_info_from_message(x)["intent_ranking"]
-            ranking_dict = {i["name"]: i["confidence"] for i in ranking}
-            result.append([ranking_dict[n] for n in self.class_names_])
-        return np.array(result)
