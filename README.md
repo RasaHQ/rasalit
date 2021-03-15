@@ -57,7 +57,7 @@ This command allows you to cluster similar utterances in a text file.
 Note that this app has some extra dependencies. You can install them via; 
 
 ```
-python -m pip install whatlies[umap]
+python -m pip install "whatlies[umap]"
 ```
 
 Example Usage:
