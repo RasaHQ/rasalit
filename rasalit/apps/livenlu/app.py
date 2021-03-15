@@ -1,3 +1,4 @@
+import json
 import pathlib
 import argparse
 
@@ -45,6 +46,13 @@ st.markdown("## Intents")
 chart_data = pd.DataFrame(blob["intent_ranking"]).sort_values("name")
 p = create_altair_chart(chart_data)
 st.altair_chart(p.properties(width=600))
+
+with st.beta_expander("Full Model Specification"):
+    spec = {
+        f"step_{i}": {"name": type(c).__name__, "settings": c.component_config}
+        for i, c in enumerate(interpreter.interpreter.pipeline)
+    }
+    st.write(spec)
 
 if "DIETClassifier" in [type(_).__name__ for _ in interpreter.interpreter.pipeline]:
     with st.beta_expander("View Diet Attention Charts."):
