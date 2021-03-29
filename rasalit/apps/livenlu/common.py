@@ -15,6 +15,7 @@ from rasa.shared.nlu.training_data.message import Message
 from rasa.shared.nlu.constants import TEXT
 
 
+@st.cache(allow_output_mutation=True)
 def load_interpreter(model_dir, model) -> RasaNLUInterpreter:
     path_str = str(pathlib.Path(model_dir) / model)
     model = get_validated_path(path_str, "model")

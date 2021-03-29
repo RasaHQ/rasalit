@@ -1,5 +1,6 @@
 import pathlib
 import numpy as np
+import streamlit as st
 
 from sklearn.base import BaseEstimator, ClassifierMixin
 from rasa.cli.utils import get_validated_path
@@ -7,6 +8,7 @@ from rasa.model import get_model, get_model_subdirectories
 from rasa.core.interpreter import RasaNLUInterpreter
 
 
+@st.cache(allow_output_mutation=True)
 def load_interpreter(model_dir, model):
     path_str = str(pathlib.Path(model_dir) / model)
     model = get_validated_path(path_str, "model")
