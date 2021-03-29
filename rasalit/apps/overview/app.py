@@ -9,7 +9,7 @@ from rasalit.apps.overview.common import (
     create_altair_chart,
 )
 
-parser = argparse.ArgumentParser(description="This app lists animals")
+parser = argparse.ArgumentParser(description="This app shows gridsearch results.")
 parser.add_argument("--folder", help="Pass the extra folder.")
 args = parser.parse_args()
 
