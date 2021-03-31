@@ -151,7 +151,7 @@ If you're using the `DIETClassifier` you'll be able to also use this app to debu
 the internals. The app also allows you to inspect all the pipeline settings as well
 as the internal attention mechanism.
 
-![](docs/attention.png)
+![](docs/attention.gif)
 
 ### `diet-explorer`
 
