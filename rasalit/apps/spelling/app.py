@@ -22,9 +22,6 @@ st.markdown("# Rasa Spelling Playground")
 st.markdown("You can select a model on the left to interact with.")
 
 st.sidebar.markdown("Made with love over at [Rasa](https://rasa.com/).")
-st.sidebar.image(
-    "https://rasahq.github.io/rasa-nlu-examples/square-logo.svg", width=100
-)
 model_files = [str(p.parts[-1]) for p in pathlib.Path(model_folder).glob("*.tar.gz")]
 model_file = st.sidebar.selectbox("What model do you want to use", model_files)
 
@@ -49,6 +46,7 @@ aug = nac.KeyboardAug(
     include_numeric=False,
     include_upper_case=False,
 )
+
 
 clf = RasaClassifier(pathlib.Path(model_folder) / model_file)
 

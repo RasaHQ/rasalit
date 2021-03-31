@@ -110,7 +110,7 @@ folder where you ran the `rasa test` command. You'll get some simple charts
 
 This command let's you predict text with augmented spelling errors to check for robustness.
 
-![](docs/spelling.jpg)
+![](docs/spelling.gif)
 
 ```
 > python -m rasalit spelling --help
