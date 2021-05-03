@@ -1,4 +1,4 @@
-<img src="docs/logo.png" width=300 height=160 align="right">
+<img src="docs/logo.png" width=200 align="right">
 
 # RasaLit
 
