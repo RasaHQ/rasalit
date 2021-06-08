@@ -69,7 +69,7 @@ python -m rasalit nlu-cluster --port 8501
 This will start a server locally. Internally it is using the [whatlies]() package to
 handle the embeddings. This means that while the demo is only in English, you can extend
 the code to work for Non-English scenarios too! For more details, as well as a labelling tool,
-check out the notebook found [here]().
+check out the notebook found [here](https://github.com/RasaHQ/rasalit/blob/main/notebooks/bulk-labelling/bulk-labelling-ui.ipynb).
 
 ### `overview`
 
