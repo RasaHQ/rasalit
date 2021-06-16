@@ -58,6 +58,9 @@ if "intent" in items:
 
 if "entity" in items:
     st.markdown("## Entity Summary")
-    st.altair_chart(create_altair_chart(df_entity_subset))
-    if show_raw_data:
-        st.write(df_entity_subset.pipe(mk_viewable))
+    if df_entity.shape[0] > 0:
+        st.altair_chart(create_altair_chart(df_entity_subset))
+        if show_raw_data:
+            st.write(df_entity_subset.pipe(mk_viewable))
+    else:
+        st.markdown("No entities are being used.")
