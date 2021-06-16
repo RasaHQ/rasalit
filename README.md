@@ -18,9 +18,8 @@ python -m pip install git+https://github.com/RasaHQ/rasalit
 
 ### Compatibility
 
-The focus is to support the most recent version of Rasa. We do tag a release every
-time that we upgrade though. That means you can find compatible versions of rasalit for
-Rasa 1.10 [here](https://github.com/RasaHQ/rasalit/tree/r1.10).
+The focus is to support the most recent version of Rasa. Current we target 2.x. 
+We keep older versions around though. You can find rasalit for Rasa 1.10 [here](https://github.com/RasaHQ/rasalit/tree/r1.10).
 
 ## Usage
 
