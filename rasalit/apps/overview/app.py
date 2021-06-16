@@ -62,5 +62,5 @@ if "entity" in items:
         st.altair_chart(create_altair_chart(df_entity_subset))
         if show_raw_data:
             st.write(df_entity_subset.pipe(mk_viewable))
-    else: 
+    else:
         st.markdown("No entities are being used.")
