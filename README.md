@@ -181,6 +181,22 @@ and [this video](https://www.youtube.com/watch?v=T0dDetqgra4&ab_channel=Rasa) ca
 
 This notebook allows you to use embeddings and a drawing tool to do some bulk-labelling.
 
+## Running with Docker Compose
+
+You can run all of the above commands at the same time and access them all from the same URL using the provided `docker-compose.yaml`.
+
+To do this, [make sure Docker Compose is installed](https://docs.docker.com/compose/install/) and run:
+
+```bash
+# If you haven't already cloned this repo.
+git clone git@github.com:RasaHQ/rasalit.git
+cd rasalit
+
+RASA_PROJECT_DIR=/path/to/my_rasa_project docker-compose up -d
+```
+
+Where `/path/to/my_rasa_project` is the (relative or absolute) path to the Rasa project you want to examine. Wait for a few seconds and you should be able to access all the Rasalit apps by going to http://localhost:8000.
+
 ## Contribute
 
 There are many ways you can contribute to this project.
