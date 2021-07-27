@@ -59,6 +59,7 @@ services:
     container_name: rasalit-overview
     environment:
       - PORT=8503
+      - FOLDER=${OVERVIEW_FOLDER:-gridresults}
 
   rasalit-spelling:
     build:

@@ -192,10 +192,10 @@ To do this, [make sure Docker Compose is installed](https://docs.docker.com/comp
 git clone git@github.com:RasaHQ/rasalit.git
 cd rasalit
 
-RASA_PROJECT_DIR=/path/to/my_rasa_project docker-compose up -d
+RASA_PROJECT_DIR=/path/to/my_rasa_project OVERVIEW_FOLDER=/path/to/gridresults docker-compose up -d
 ```
 
-Where `/path/to/my_rasa_project` is the (relative or absolute) path to the Rasa project you want to examine. Wait for a few seconds and you should be able to access all the Rasalit apps by going to http://localhost:8000.
+Where `/path/to/my_rasa_project` is the (relative or absolute) path to the Rasa project you want to examine and `/path/to/gridresults` is the path to the results of the cross-validation as documented [above](#overview). Wait for a few seconds and you should be able to access all the Rasalit apps by going to http://localhost:8000.
 
 ## Contribute
 
