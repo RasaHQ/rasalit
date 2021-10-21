@@ -167,6 +167,32 @@ Example Usage:
 This will start a server locally on port 8501 that will display an interactive
 visualisation of the DIET architecture.
 
+### `generate-compose`
+
+This command generates a `docker-compose.yaml` file based on your specified options that allows you to run all the streamlit apps at the same time, accessible through a single web page.
+
+To generate the compose file, simply run:
+
+```bash
+> rasalit generate-compose \
+>     --rasa-project-dir /path/to/rasa/project \
+>     --overview-folder ./gridresults /
+>     --include-duckling  # This is only needed if your NLP pipeline uses Duckling.
+>     --output-dir compose
+```
+
+For details of each option and what they mean, do `rasalit generate-compose --help`.
+
+Once you've run this, you can run all the Rasalit apps at once by [installing Docker Compose](https://docs.docker.com/compose/install/) and running:
+
+```bash
+> cd compose && docker-compose up -d
+```
+
+You should then be able to access the streamlit apps at http://localhost:8000.
+
+To view the container logs, simply run `docker-compose logs -f` in the compose output directory.
+
 ## Notebooks
 
 This project also hosts a few jupyter notebooks that contain interactive tools.
@@ -180,22 +206,6 @@ and [this video](https://www.youtube.com/watch?v=T0dDetqgra4&ab_channel=Rasa) ca
 ![](docs/bulk.gif)
 
 This notebook allows you to use embeddings and a drawing tool to do some bulk-labelling.
-
-## Running with Docker Compose
-
-You can run all of the above commands at the same time and access them all from the same URL using the provided `docker-compose.yaml`.
-
-To do this, [make sure Docker Compose is installed](https://docs.docker.com/compose/install/) and run:
-
-```bash
-# If you haven't already cloned this repo.
-git clone git@github.com:RasaHQ/rasalit.git
-cd rasalit
-
-RASA_PROJECT_DIR=/path/to/my_rasa_project OVERVIEW_FOLDER=/path/to/gridresults docker-compose up -d
-```
-
-Where `/path/to/my_rasa_project` is the (relative or absolute) path to the Rasa project you want to examine and `/path/to/gridresults` is the path to the results of the cross-validation as documented [above](#overview). Wait for a few seconds and you should be able to access all the Rasalit apps by going to http://localhost:8000.
 
 ## Contribute
 
