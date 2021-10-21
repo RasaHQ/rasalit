@@ -18,7 +18,7 @@ services:
     restart: on-failure
 
   rasalit-diet-explorer:
-    image: rasalit-diet-explorer
+    image: ghcr.io/RasaHQ/rasalit-diet-explorer:latest
     volumes:
       - {rasa_project_dir}:/home/appuser
     container_name: rasalit-diet-explorer
@@ -26,7 +26,7 @@ services:
       - PORT=8500
 
   rasalit-live-nlu:
-    image: rasalit-live-nlu
+    image: ghcr.io/RasaHQ/rasalit-live-nlu:latest
     volumes:
       - {rasa_project_dir}:/home/appuser
     container_name: rasalit-live-nlu
@@ -36,7 +36,7 @@ services:
       - {duckling_url_env}
 
   rasalit-nlu-cluster:
-    image: rasalit-nlu-cluster
+    image: ghcr.io/RasaHQ/rasalit-nlu-cluster:latest
     volumes:
       - {rasa_project_dir}:/home/appuser
     container_name: rasalit-nlu-cluster
@@ -44,7 +44,7 @@ services:
       - PORT=8502
 
   rasalit-overview:
-    image: rasalit-overview
+    image: ghcr.io/RasaHQ/rasalit-overview:latest
     volumes:
       - {rasa_project_dir}:/home/appuser
     container_name: rasalit-overview
@@ -53,7 +53,7 @@ services:
       - FOLDER={overview_folder}
 
   rasalit-spelling:
-    image: rasalit-spelling
+    image: ghcr.io/RasaHQ/rasalit-spelling:latest
     volumes:
       - {rasa_project_dir}:/home/appuser
     container_name: rasalit-spelling
