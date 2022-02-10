@@ -86,5 +86,9 @@ def version():
     print(f"{__version__}")
 
 
+def main():
+    app(prog_name="rasalit")
+
+
 if __name__ == "__main__":
     app()
