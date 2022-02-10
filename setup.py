@@ -22,7 +22,7 @@ setup(
     install_requires=base_packages,
     entry_points={
         "console_scripts": [
-            "rasalit = rasalit.__main__:main",
+            "rasalit = rasalit.__main__:app",
         ],
     },
     package_data={"rasalit": ["html/*/*.html", "data/*.*"]},
