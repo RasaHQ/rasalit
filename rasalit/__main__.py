@@ -4,6 +4,7 @@ import pathlib
 import subprocess
 from rasalit import __version__
 from rasalit.common import run_streamlit_app, app_path
+from rasalit.compose import generate_compose_files
 
 
 app = typer.Typer(add_completion=False)
@@ -59,7 +60,7 @@ def spelling(
         curr_dir / "models", help="Folder that contains all Rasa NLU models"
     ),
     project_folder: pathlib.Path = typer.Option(
-        curr_dir, help="The Rasa project folder (for custom component paths"
+        curr_dir, help="The Rasa project folder (for custom component paths)"
     ),
 ):
     """Check the effect of spelling on NLU predictions."""
@@ -78,6 +79,38 @@ def diet_explorer(
     app = app_path("html/diet")
     typer.echo(typer.style(f"Starting up {app}", fg="green"))
     subprocess.run(["python", "-m", "http.server", str(port), "--directory", app])
+
+
+@app.command()
+def generate_compose(
+    rasa_project_dir: pathlib.Path = typer.Option(
+        curr_dir, help="The Rasa project folder (for custom component paths)."
+    ),
+    overview_folder: pathlib.Path = typer.Option(
+        "gridresults",
+        help="Directory containing results of cross-validation from 'overview' command.",
+    ),
+    include_duckling: bool = typer.Option(
+        False,
+        help=(
+            "Include the Duckling component in the generated Docker Compose - this is "
+            "only required if your configured NLP pipeline relies on Duckling."
+        ),
+    ),
+    output_dir: pathlib.Path = typer.Option(
+        "compose", help="Directory to output Docker Compose files into."
+    ),
+):
+    """Generate Docker Compose configuration file for hosting all Streamlit apps together."""
+    typer.secho(f"Generating Docker Compose files into '{output_dir}'.", fg="green")
+    output_dir.mkdir(exist_ok=True)
+    generate_compose_files(
+        rasa_project_dir, overview_folder, include_duckling, output_dir
+    )
+    typer.secho(
+        f'Successfully generated Docker Compose files, run with: \n\n  $ cd "{output_dir}" && docker-compose up -d',
+        fg="green",
+    )
 
 
 @app.command()

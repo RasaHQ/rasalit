@@ -169,6 +169,32 @@ Example Usage:
 This will start a server locally on port 8501 that will display an interactive
 visualisation of the DIET architecture.
 
+### `generate-compose`
+
+This command generates a `docker-compose.yaml` file based on your specified options that allows you to run all the streamlit apps at the same time, accessible through a single web page.
+
+To generate the compose file, simply run:
+
+```bash
+> rasalit generate-compose \
+>     --rasa-project-dir /path/to/rasa/project \
+>     --overview-folder ./gridresults /
+>     --include-duckling  # This is only needed if your NLP pipeline uses Duckling.
+>     --output-dir compose
+```
+
+For details of each option and what they mean, do `rasalit generate-compose --help`.
+
+Once you've run this, you can run all the Rasalit apps at once by [installing Docker Compose](https://docs.docker.com/compose/install/) and running:
+
+```bash
+> cd compose && docker-compose up -d
+```
+
+You should then be able to access the streamlit apps at http://localhost:8000.
+
+To view the container logs, simply run `docker-compose logs -f` in the compose output directory.
+
 ## Notebooks
 
 This project also hosts a few jupyter notebooks that contain interactive tools.
